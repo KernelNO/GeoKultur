@@ -162,15 +162,15 @@ module App.Controllers {
             detailAccordion.accordion("option", "icons", { 'header': 'showMoreAccordion', 'activeHeader': 'showLessAccordion' });
             $('#detailAccordion .ui-accordion-content').show();
 
-            $("#addPoiToRoute").mousedown(function () {
-                routeController.openRouteList(poi);
-            });
+            //$("#addPoiToRoute").mousedown(function () {
+            //    routeController.openRouteList(poi);
+            //});
 
-            $("#createNewRouteBtn").mousedown(function () {
-                var name = $("#newRouteName").val();
-                routeController.createRoute(name, poi);
-                $("#newRouteName").val("");
-            });
+            //$("#createNewRouteBtn").mousedown(function () {
+            //    var name = $("#newRouteName").val();
+            //    routeController.createRoute(name, poi);
+            //    $("#newRouteName").val("");
+            //});
 
             //return to previous view when closing the dialog, should this be handled some other way,
             //such as placing the poiview on top of current view instead? how?
