@@ -170,31 +170,19 @@
     <script>
         $(document).ready(function () {
             $("#mainSection").hide().delay(1000).show();
-            $("#routeTabs").tabs();
-
-            $("#sortableEditorialRoutes").sortable();
-            $("#sortableEditorialRoutes").disableSelection();
-
-            $("#addPoiToRoute").mousedown(function () {
-                $("#addPoiToRouteForm").toggle();
-            });
 
             $(document).mousedown(function () {
                 $('#mainPopupMenu').hide();
             });
 
-            $("#headerMenuBtn").mousedown(function (e) {
-                $('#mainPopupMenu').toggle();
-                e.stopPropagation();
-            });
 
             $("#poiPreview").mousedown(function (e) {
                 e.stopPropagation();
             });
         });
         // Init
-        config.appName = "KNappen";
-        config.appFullName = "Kultur- og Naturreise";
+        config.appName = "GeoKultur";
+        config.appFullName = "GeoKultur";
         config.debug = true;
 
         //startup.addPostInit(function () { log.userPopup("CONFIG:appName", "CONFIG:appFullName"); });
@@ -298,9 +286,6 @@
 </head>
 <body>
     <div id="headerSection" class="headerSection">
-        <div class="popupMenuOpenButton left" id="headerMenuBtn">
-            <img src="Content/images/MenuImages/menu_Inactive.png" />
-        </div>
         <div id="logoFrame" class="middle nobr">
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Home.png" onmousedown="viewController.selectView('homeView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Search.png" onmousedown="viewController.selectView('searchView'); return false;" />
@@ -352,9 +337,11 @@
                     <input type="button" value="Søk" onmousedown="searchController.doSearch();" />
             </div>
         </div>-->
-        <div id="homeView" class="contentPage middle" width="100%">
+        <div id="homeView" class="contentPage middle" style="width:100%">
             
+            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width:90%" class="middle"/>
                 <ul class="middle">
+                    
                     <li>
                         <div class="divMenuButtons" onmousedown="viewController.selectView('arView'); return false;">
                             <img src="GeoKultur/Images/Ikoner/AR.png" />
@@ -391,32 +378,11 @@
 
         <div id="listView" class="contentPage">
             <!-- Fill this with data from Norvegiana in this format: <h3><div> -->
-            <div id="routeName">
-                <h3></h3>
-            </div>
             <div id="listCount" class="resultListCentered">
             </div>
             <div id="listAccordion">
             </div>
             <div id="listPager" class="resultListCentered">
-            </div>
-        </div>
-        <div id="routeView" class="contentPage">
-            <input type="button" id="btnCache" value="Forh&aring;ndslagre" />
-
-            <div id="routeTabs">
-                <ul>
-                    <li><a href="#routeListEditorial">Anbefalte</a></li>
-                    <li><a href="#routeListUser">Egendefinerte</a></li>
-                </ul>
-                <div id="routeListEditorial">
-                    <ul id="editorialRoutes" class="routes">
-                    </ul>
-                </div>
-                <div id="routeListUser">
-                    <ul id="userRoutes" class="routes">
-                    </ul>
-                </div>
             </div>
         </div>
         <div id="mapView" class="contentPage" style="background-color: lightgrey;">
@@ -564,7 +530,7 @@
         </div>
 
         <div id="aboutView" class="contentPage">
-            <h2>About GeopCulture</h2>
+            <h2>About GeoCulture</h2>
             <p></p>
             <p>
                 GeoCulture is a tool to discover culture around you. It was originally developed for the Apps4Norway national coding competition for best use of open data, and it won first place.
@@ -588,13 +554,7 @@
                 <div id="poiDetailContent">
                     <div id="poiName"></div>
                     <!--                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />-->
-                    <div id="addPoiToRouteForm" class="hidden padding">
-                        <input type="text" id="newRouteName" />
-                        <input type="button" value="Opprett" id="createNewRouteBtn" />
-                        <ul id="listExistingRoutes"></ul>
-                    </div>
                 </div>
-                <div id="poiCategory"></div>
                 <div id="poiImage" class="hidden">
                     <img src="" id="poiThumbnail" />
                 </div>
@@ -610,10 +570,8 @@
                 <div id="poiIngress" class="padding"></div>
 
                 <div id="detailAccordion" class="padding ui-accordion">
-                    <h3 class="ui-accordion-header">Beskrivelse</h3>
+                    <h3 class="ui-accordion-header">$T[Description]</h3>
                     <div id="poiDescription" class="ui-accordion-content"></div>
-                    <h3 class="ui-accordion-header">Mer informasjon</h3>
-                    <div id="poiAboutData" class="ui-accordion-content"></div>
                 </div>
                 </>
             </div>
@@ -630,40 +588,6 @@
         <!--            Kultur og Naturreise-->
 
     </div>
-    <div id="mainPopupMenu" class="popupMenu">
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); return false;">
-            <img src="Content/images/MenuImages/menu_Active.png" />
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('mapView'); return false;">
-            <img src="Content/images/MenuImages/mapIcon.png" />Kart
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('arView'); return false;">
-            <img src="Content/images/MenuImages/ar.png" />Kameravisning
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('listView'); return false;">
-            <img src="Content/images/MenuImages/list.png" />Liste
-        </div>
-        <!--        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('routeView'); return false;">
-            <img src="Content/images/MenuImages/routes.png" />Ruter
-        </div>-->
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('searchView'); return false;">
-            <img src="Content/images/MenuImages/search.png" />S&oslash;k
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('settingsView'); return false;">
-            <img src="Content/images/MenuImages/settings.png" />Innstillinger
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('feedbackView'); return false;">
-            <img src="Content/images/MenuImages/feedback.png" />Tilbakemelding
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('aboutView'); return false;">
-            <img src="Content/images/MenuImages/about.png" />Om appen
-        </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('debugView'); return false;">Debug log</div>
-        <img src="Content/images/topLogo.png" class="popupMenuButton" />
-    </div>
-    <script>
-        $('#mainPopupMenu').hide();
-    </script>
 
 
     <script src="http://knappen.konge.net/KNappen_Script.js"></script>

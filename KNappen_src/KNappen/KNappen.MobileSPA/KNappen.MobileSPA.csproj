@@ -47,6 +47,7 @@
     <Content Include="config.xml" />
     <Content Include="Content\font\vjs.svg" />
     <Content Include="Content\images\AppIcons\defaultPoiIcon.png" />
+    <Content Include="Content\images\AppIcons\GeoKulturLogo.png" />
     <Content Include="Content\images\AppIcons\search.png" />
     <Content Include="Content\images\Categories\defaultCategory.png" />
     <Content Include="Content\images\Categories\wikipedia.png" />
