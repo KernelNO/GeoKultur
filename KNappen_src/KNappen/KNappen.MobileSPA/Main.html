@@ -185,12 +185,8 @@
         config.appFullName = "GeoKultur";
         config.debug = true;
 
-        //startup.addPostInit(function () { log.userPopup("CONFIG:appName", "CONFIG:appFullName"); });
-        //startup.addPreInit(function () { log.userPopup("Startup", "PreInit..."); });
-        //startup.addInit(function () { log.userPopup("Startup", "Init..."); });
-        //startup.addPostInit(function () { log.userPopup("Startup", "PostInit..."); });
 
-
+        // Add all known views to ViewController.
         startup.addPreInit(function () {
             viewController.AddView("homeView");
             viewController.AddView("listView");
@@ -435,22 +431,22 @@
 
         <div id="settingsView" class="contentPage">
 
-            <h2>Oppstartsinnstillinger</h2>
-            <div>
-                <h3>Oppstartsvisning</h3>
+            <h2 class="translate">$T[Startup settings]</h2>
+            <!--<div>
+                <h3 class="translate">$T[Start view]</h3>
                 <select id="ddlSettingsStartView" class="refreshSelectAfterDataBind" data-bind="value: settings().startView, jqmOptions: settings().views, optionsText: 'name', optionsValue: 'id'"></select>
             </div>
             <br />
             <div>
-                <h3>Standard antall resultater fra hver datakilde</h3>
+                <h3 class="translate">$T[Default number of results]</h3>
                 <select id="ddlSettingsStartResultAmount" class="refreshSelectAfterDataBind" data-bind="value: settings().startResultAmount, jqmOptions: settings().resultAmounts, optionsText: 'name', optionsValue: 'id'"></select>
             </div>
             <br />
             <div>
-                <h3>Standard avstand i søk</h3>
+                <h3 class="translate">$T[Default search distance]</h3>
                 <select id="ddlSettingsStartSearchDistance" class="refreshSelectAfterDataBind" data-bind="value: settings().startSearchDistance, jqmOptions: settings().searchDistances, optionsText: 'name', optionsValue: 'id'"></select>
             </div>
-            <br />
+            <br />-->
             <!--
                 <div>
                     <h3>Standard kategori i søk</h3>
@@ -461,12 +457,12 @@
                 <br />
              -->
             <div>
-                <h3>Standard zoomnivå i kart</h3>
+                <h3 class="translate">$T[Default zoom level]</h3>
                 <select id="ddlSettingsStartMapZoomLevel" class="refreshSelectAfterDataBind" data-bind="value: settings().startMapZoomLevel, jqmOptions: settings().mapZoomLevels, optionsText: 'name', optionsValue: 'id'"></select>
             </div>
             <br />
             <div>
-                <h3>Standard karttype</h3>
+                <h3 class="translate">$T[Default map type]</h3>
                 <select id="ddlSettingsStartMapType" class="refreshSelectAfterDataBind" data-bind="value: settings().startMapType, jqmOptions: settings().mapTypes, optionsText: 'name', optionsValue: 'id'"></select>
             </div>
             <br />
@@ -481,7 +477,7 @@
                 });
             </script>
             <div id="adminPasswordDiv" class="hidden">
-                <h3>Adminpassord</h3>
+                <h3 class="translate">$T[Adminpassword]</h3>
                 <input type="text" id="inputSettingsAdminPassword" data-bind="value: settings().adminPassword, valueUpdate: 'afterkeydown'" />
                 <br />
                 <br />
@@ -518,19 +514,21 @@
 
         <div id="feedbackView" class="contentPage">
             <select id="feedbackCategory" name="Kategori">
-                <option value="forslag" selected="selected">Funksjonelle feil</option>
-                <option value="ris">Kommentar til innhold</option>
+                <option value="forslag" selected="selected" class="translate">$T[Functional error]</option>
+                <option value="ris" class="translate">$T[Comment on content]</option>
             </select><br />
-            Din e-post (valgfritt):
+            <span class="translate">$T[Your email address]:</span>
             <input type="text" id="feedbackFromAddress" size="30" />
             <br />
             <textarea id="feedbackText" rows="5" cols="40"></textarea>
             <br />
-            <input type="button" value="Send tilbakemelding" onmousedown="feedbackController.send(); return false;" />
+            <div class="translate">
+                <input type="button" value="$T[Send feedback]" onmousedown="feedbackController.send(); return false;" />
+            </div>
         </div>
 
         <div id="aboutView" class="contentPage">
-            <h2>About GeoCulture</h2>
+            <h2>About GeopCulture</h2>
             <p></p>
             <p>
                 GeoCulture is a tool to discover culture around you. It was originally developed for the Apps4Norway national coding competition for best use of open data, and it won first place.
@@ -554,7 +552,13 @@
                 <div id="poiDetailContent">
                     <div id="poiName"></div>
                     <!--                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />-->
+                    <div id="addPoiToRouteForm" class="hidden padding translate">
+                        <input type="text" id="newRouteName" />
+                        <input type="button" value="$T[Create]" id="createNewRouteBtn" />
+                        <ul id="listExistingRoutes"></ul>
+                    </div>
                 </div>
+                <div id="poiCategory"></div>
                 <div id="poiImage" class="hidden">
                     <img src="" id="poiThumbnail" />
                 </div>
@@ -570,8 +574,10 @@
                 <div id="poiIngress" class="padding"></div>
 
                 <div id="detailAccordion" class="padding ui-accordion">
-                    <h3 class="ui-accordion-header">$T[Description]</h3>
+                    <h3 class="ui-accordion-header translate">$T[Description]</h3>
                     <div id="poiDescription" class="ui-accordion-content"></div>
+                    <h3 class="ui-accordion-header translate">$T[More information]</h3>
+                    <div id="poiAboutData" class="ui-accordion-content"></div>
                 </div>
                 </>
             </div>
