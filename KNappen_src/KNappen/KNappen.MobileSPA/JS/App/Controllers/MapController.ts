@@ -116,16 +116,16 @@ module App.Controllers {
                     title: tr.translate("Zoom out"),
                     text: "<span class='typcn typcn-minus mapTypIconButton'></span>",
                 }),
-                new OpenLayers.Control.Button({
-                    title: tr.translate("Search"),
-                    text: "<span class='typcn typcn-sort-alphabetically mapTypIconButton'></span>",
-                    trigger: function () {
-                        var pos = gpsProvider.lastPos;
-                        if (!pos)
-                            pos = config.mapStartPos;
-                        _this.openPlaceSearch()
-                    }
-                }),
+                //new OpenLayers.Control.Button({
+                //    title: tr.translate("Search"),
+                //    text: "<span class='typcn typcn-sort-alphabetically mapTypIconButton'></span>",
+                //    trigger: function () {
+                //        var pos = gpsProvider.lastPos;
+                //        if (!pos)
+                //            pos = config.mapStartPos;
+                //        _this.openPlaceSearch()
+                //    }
+                //}),
                     new OpenLayers.Control.Button({
                         title: tr.translate("Change map layer"),
                         text: "<span class='typcn typcn-image mapTypIconButton'></span>",
