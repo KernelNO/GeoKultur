@@ -21,7 +21,7 @@ module App {
         public startMapType: KnockoutObservableString = ko.observable('Google');
         public startMapZoomLevel: KnockoutObservableNumber = ko.observable(14);
         public startResultAmount: KnockoutObservableNumber = ko.observable(30);
-        public startView: KnockoutObservableString = ko.observable('mapView');
+        public startView: KnockoutObservableString = ko.observable('homeView');
 
         public adminPassword: KnockoutObservableString = ko.observable('');
 

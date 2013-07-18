@@ -51,6 +51,7 @@
     <link href="Content/TypIcons/typicons.min.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
     <link href="Content/video-js.css" rel="stylesheet" />
+    <link href="GeoKultur/Style.css" rel="stylesheet" />
 
     <!-- Runtime (Wikitude) -->
     <script src="architect://architect.js"></script>
@@ -203,6 +204,7 @@
 
 
         startup.addPreInit(function () {
+            viewController.AddView("homeView");
             viewController.AddView("listView");
             viewController.AddView("mapView");
             viewController.AddView("arView");
@@ -211,7 +213,7 @@
             viewController.AddView("searchView");
             viewController.AddView("aboutView");
             viewController.AddView("debugView");
-//            viewController.AddView("routeView");
+            //            viewController.AddView("routeView");
             viewController.AddView("poiView");
         }, "Main:AddViews");
 
@@ -299,11 +301,15 @@
         <div class="popupMenuOpenButton left" id="headerMenuBtn">
             <img src="Content/images/MenuImages/menu_Inactive.png" />
         </div>
-        <div class="right">
-            <img src="Content/images/AppIcons/search.png" class="appImage" onmousedown="viewController.selectView('searchView');" />
-        </div>
-        <div id="logoFrame" class="middle" onmousedown="viewController.selectView(settings.startView());">
-            <h2>GeoKultur</h2>
+        <div id="logoFrame" class="middle nobr">
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Home.png" onmousedown="viewController.selectView('homeView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Search.png" onmousedown="viewController.selectView('searchView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/List.png" onmousedown="viewController.selectView('listView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/POI.png" onmousedown="viewController.selectView('mapView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/AR.png" onmousedown="viewController.selectView('arView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Settings.png" onmousedown="viewController.selectView('settingsView'); return false;" />
+            <!--<img class="topMenuImage" src="GeoKultur/Images/Ikoner/About.png" onmousedown="viewController.selectView('aboutView'); return false;" />-->
+
         </div>
 
     </div>
@@ -346,6 +352,42 @@
                     <input type="button" value="Søk" onmousedown="searchController.doSearch();" />
             </div>
         </div>-->
+        <div id="homeView" class="contentPage middle" width="100%">
+            
+                <ul class="middle">
+                    <li>
+                        <div class="divMenuButtons" onmousedown="viewController.selectView('arView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/AR.png" />
+                            <h2>Augmented Reality</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons" onmousedown="viewController.selectView('mapView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/POI.png" />
+                            <h2>Map</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons" onmousedown="viewController.selectView('listView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/List.png" />
+                            <h2>List</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons" onmousedown="viewController.selectView('settingsView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/Settings.png" />
+                            <h2>Settings</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons" onmousedown="viewController.selectView('aboutView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/About.png" />
+                            <h2>About</h2>
+                        </div>
+                    </li>
+                </ul>
+            
+        </div>
 
         <div id="listView" class="contentPage">
             <!-- Fill this with data from Norvegiana in this format: <h3><div> -->
@@ -383,7 +425,6 @@
             <div id="mapCacheReadStatus"></div>
         </div>
         <div id="arView" style="height: 0; background: transparent" class="contentPage">
-            Kameravisning
         </div>
         <script>
             // Attempt at getting jQuery mobile to show default selected at init... http://stackoverflow.com/questions/9373982/knockout-and-jquery-mobile-binding-data-to-select-lists
@@ -546,7 +587,7 @@
                 </div>-->
                 <div id="poiDetailContent">
                     <div id="poiName"></div>
-<!--                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />-->
+                    <!--                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />-->
                     <div id="addPoiToRouteForm" class="hidden padding">
                         <input type="text" id="newRouteName" />
                         <input type="button" value="Opprett" id="createNewRouteBtn" />
@@ -602,7 +643,7 @@
         <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('listView'); return false;">
             <img src="Content/images/MenuImages/list.png" />Liste
         </div>
-<!--        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('routeView'); return false;">
+        <!--        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('routeView'); return false;">
             <img src="Content/images/MenuImages/routes.png" />Ruter
         </div>-->
         <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('searchView'); return false;">

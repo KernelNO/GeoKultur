@@ -1,5 +1,5 @@
 @echo off
-del TypeScriptFiles.txt
+del TypeScriptFiles.txt 2> NUL
 for /r ".\KNappen.MobileSPA" %%i in (*.ts) do @call :CompileTS "%%i"
 tsc.exe --comments --sourcemap @TypeScriptFiles.txt
 goto EOF
