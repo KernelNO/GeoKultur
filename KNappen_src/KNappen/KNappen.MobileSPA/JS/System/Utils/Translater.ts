@@ -35,10 +35,13 @@ module System.Utils
         {
             var ucStr: string = str.toUpperCase();
             var translated: string = this.strings[ucStr];
+            var strParametered: string = translated;
+            if (!strParametered)
+                strParametered = str;
 
-            if (params) {
+            if (params && strParametered) {
                 // Replace {0} {1} etc
-                translated = translated.replace(/{([^{}]*)}/g,
+                strParametered = strParametered.replace(/{([^{}]*)}/g,
                     function (a, b) {
                         var r = params[b];
                         return typeof r === 'string' ? r : a;
@@ -47,8 +50,8 @@ module System.Utils
             }
 
             if (translated) {
-                log.verboseDebug("Translater", "Returning translation for key " + ucStr + ": " + translated + "");
-                return translated;
+                log.verboseDebug("Translater", "Returning translation for key " + ucStr + ": " + strParametered + "");
+                return strParametered;
             }
 
             var configVar = this.regexMatchConf.exec(str);
@@ -60,7 +63,7 @@ module System.Utils
             }
 
             log.error("Translater", "Unable to find translation for: '" + str + "'");
-            return str;
+            return strParametered;
         }
 
         /**
