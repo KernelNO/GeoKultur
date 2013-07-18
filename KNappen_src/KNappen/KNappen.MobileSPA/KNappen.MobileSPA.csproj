@@ -224,6 +224,13 @@
     <TypeScriptCompile Include="JS\System\Providers\MapStorageProvider.ts" />
     <TypeScriptCompile Include="JS\System\Providers\MapPreCacheProvider.ts" />
     <TypeScriptCompile Include="JS\System\Providers\MapCacheProvider.ts" />
+    <TypeScriptCompile Include="JS\App\Providers\TranslationProviderEN.ts" />
+    <Content Include="JS\App\Providers\TranslationProviderEN.js">
+      <DependentUpon>TranslationProviderEN.ts</DependentUpon>
+    </Content>
+    <Content Include="JS\App\Providers\TranslationProviderEN.min.js">
+      <DependentUpon>TranslationProviderEN.ts</DependentUpon>
+    </Content>
     <Content Include="JS\System\Providers\MapCacheProvider.js">
       <DependentUpon>MapCacheProvider.ts</DependentUpon>
     </Content>
@@ -569,6 +576,9 @@
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\json2.min.js" />
     <Content Include="Scripts\OpenLayers.debug.js" />
+    <Content Include="JS\App\Providers\TranslationProviderEN.js.map">
+      <DependentUpon>TranslationProviderEN.ts</DependentUpon>
+    </Content>
     <None Include="Scripts\OpenLayers.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.debug.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.js_DoNotUse_NotModified" />
