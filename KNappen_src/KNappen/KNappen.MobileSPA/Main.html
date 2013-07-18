@@ -210,7 +210,7 @@
             viewController.AddView("searchView");
             viewController.AddView("aboutView");
             viewController.AddView("debugView");
-            viewController.AddView("routeView");
+//            viewController.AddView("routeView");
             viewController.AddView("poiView");
         }, "Main:AddViews");
 
@@ -551,7 +551,7 @@
                 </div>-->
                 <div id="poiDetailContent">
                     <div id="poiName"></div>
-                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />
+<!--                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />-->
                     <div id="addPoiToRouteForm" class="hidden padding">
                         <input type="text" id="newRouteName" />
                         <input type="button" value="Opprett" id="createNewRouteBtn" />
@@ -607,9 +607,9 @@
         <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('listView'); return false;">
             <img src="Content/images/MenuImages/list.png" />Liste
         </div>
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('routeView'); return false;">
+<!--        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('routeView'); return false;">
             <img src="Content/images/MenuImages/routes.png" />Ruter
-        </div>
+        </div>-->
         <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('searchView'); return false;">
             <img src="Content/images/MenuImages/search.png" />S&oslash;k
         </div>
