@@ -28,3 +28,7 @@
     padding-left: 20px;
 }
 .nobr { white-space:nowrap; }
+.plainlist
+{
+    list-style-type: none;
+}
