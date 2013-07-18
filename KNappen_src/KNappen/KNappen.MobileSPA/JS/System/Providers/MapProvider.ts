@@ -149,7 +149,15 @@ module System.Providers {
             var mapUrlType = data[1];
             var mapLayer = data[2];
 
-            if (mapType == "WMS") {
+
+
+
+            if (mapType == "Google") {
+                return new OpenLayers.Layer.Google(
+                    "Google Streets"
+                // default type, no change needed here
+                    );
+            }if (mapType == "WMS") {
                 return new OpenLayers.Layer.WMS("OpenLayers WMS",
                     config.openLayersMapUrl[mapUrlType],
                     {

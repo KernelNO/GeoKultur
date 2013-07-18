@@ -40,7 +40,7 @@ module System {
 
         public mapCacheTileLimit: { [cacheType: string]: number; } = {};
         public mapCacheLevelDetail: { [level: number]: System.MapCacheLevelItem; } = {};
-        public mapCacheMapType: string = "WMS:std0:norges_grunnkart"; 
+        public mapCacheMapType: string = "Google"; 
 
         public mapUseCache = true;
 

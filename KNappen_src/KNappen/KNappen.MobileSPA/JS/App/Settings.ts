@@ -17,7 +17,8 @@ module App {
         //public startSearchCategory: KnockoutObservableString = ko.observable('*');
         public startSearchCategory: KnockoutObservableString = ko.observable('*');
         public startSearchDistance: KnockoutObservableNumber = ko.observable(1);
-        public startMapType: KnockoutObservableString = ko.observable('WMS:std0:norges_grunnkart');
+        //public startMapType: KnockoutObservableString = ko.observable('WMS:std0:norges_grunnkart');
+        public startMapType: KnockoutObservableString = ko.observable('Google');
         public startMapZoomLevel: KnockoutObservableNumber = ko.observable(14);
         public startResultAmount: KnockoutObservableNumber = ko.observable(30);
         public startView: KnockoutObservableString = ko.observable('mapView');
@@ -43,8 +44,10 @@ module App {
 
         private setOverrides() {
             this.mapTypes = ko.observableArray([
+                { id: "Google", name: "Google Maps" },
             { id: "WMS:std0:norges_grunnkart", name: "Norges grunnkart" },
-            { id: "WMS:std0:topo2", name: "Topologisk" },
+                { id: "WMS:std0:topo2", name: "Topologisk" }
+
             //{ id: "nib0:NiB", name: "Flyfoto" },
             //{ id: "WMTS:nib0:NiB", name: "Flyfoto" },
             ]);

@@ -116,23 +116,23 @@ module App.Controllers {
                     title: "Zoom ut",
                     text: "<span class='typcn typcn-minus mapTypIconButton'></span>",
                 }),
-                new OpenLayers.Control.Button({
-                    title: "Søk",
-                    text: "<span class='typcn typcn-sort-alphabetically mapTypIconButton'></span>",
-                    trigger: function () {
-                        var pos = gpsProvider.lastPos;
-                        if (!pos)
-                            pos = config.mapStartPos;
-                        _this.openPlaceSearch()
-                    }
-                }),
-                    new OpenLayers.Control.Button({
-                        title: "Bytt kartlag",
-                        text: "<span class='typcn typcn-image mapTypIconButton'></span>",
-                        trigger: function () {
-                            _this.nextMapLayer();
-                        }
-                    })
+                //new OpenLayers.Control.Button({
+                //    title: "Søk",
+                //    text: "<span class='typcn typcn-sort-alphabetically mapTypIconButton'></span>",
+                //    trigger: function () {
+                //        var pos = gpsProvider.lastPos;
+                //        if (!pos)
+                //            pos = config.mapStartPos;
+                //        _this.openPlaceSearch()
+                //    }
+                //}),
+                //    new OpenLayers.Control.Button({
+                //        title: "Bytt kartlag",
+                //        text: "<span class='typcn typcn-image mapTypIconButton'></span>",
+                //        trigger: function () {
+                //            _this.nextMapLayer();
+                //        }
+                //    })
             ]);
             this.mapProvider.map.addControl(this.panel);
 
