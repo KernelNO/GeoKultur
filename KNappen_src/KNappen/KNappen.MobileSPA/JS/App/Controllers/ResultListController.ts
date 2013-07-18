@@ -89,7 +89,7 @@ module App.Controllers {
                         pois = pois.filter(function (element: App.Models.PointOfInterest, index, array) {
                             return element.id().toString() != v.id().toString();
                         });
-                        routeController.updateRoute(routeName, pois);
+                        //routeController.updateRoute(routeName, pois);
                         resultListController.renderView(resultListController, pois, routeName);
                     });
             });
