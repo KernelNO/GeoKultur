@@ -1,7 +1,7 @@
 ﻿.divMenuButtons{
     width: 95%;
     height: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     /*border-bottom: 1px solid #343434;*/
 }
 .divMenuButtons h2{
@@ -14,6 +14,7 @@
     margin-top: 40px;*/
 	font-size: 2em;
 	margin-top: 1.5em;
+    font-weight:normal;
 
 }
 .divMenuButtons img{
@@ -28,7 +29,7 @@
     padding-left: 20px;
 }
 .nobr { white-space:nowrap; }
-.plainlist
-{
-    list-style-type: none;
+
+.plainlist{
+    list-style:none;
 }

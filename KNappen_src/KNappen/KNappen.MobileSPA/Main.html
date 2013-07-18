@@ -237,6 +237,7 @@
         jQuery(window).resize(resizeWindow);
         viewController.addSelectEvent(function (event, oldView, newView) { resizeWindow(); });
         viewController.addPostSelectEvent(function (event, oldView, newView) { if (oldView && oldView.name == "poiView") poiController.closeDetail(); });
+        viewController.addPostSelectEvent(function (event, oldView, newView) { if (newView && newView.name == "homeView") $("#headerSection").hide(); else $("#headerSection").show();});
 
         function resizeWindow() {
             var _window = $(window);
@@ -339,7 +340,7 @@
         </div>-->
         <div id="homeView" class="contentPage">
             
-            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width:90%" class="middle"/>
+            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width:90%;max-width:600px" class="middle"/>
             <ul class="plainlist">
                     <li class="">
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
