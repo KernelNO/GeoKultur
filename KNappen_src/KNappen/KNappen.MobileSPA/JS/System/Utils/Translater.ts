@@ -4,11 +4,9 @@
     System utilities
     @namespace System.Utils
 */
-module System.Utils
-{
+module System.Utils {
     declare var config: any;
-    export class Translater
-    {
+    export class Translater {
         //public strings: { [index: string]: string; } = {};
         public strings: { [key: string]: string; } = {};
         private regexMatchConf = new RegExp("^CONFIG:(.*)", "i");
@@ -20,8 +18,7 @@ module System.Utils
           */
         constructor() { }
 
-        public PreInit()
-        {
+        public PreInit() {
             log.debug("Translator", "PreInit()");
             translater.translateAllClasses();
         }
@@ -31,8 +28,7 @@ module System.Utils
           * @method System.Startup#translate
           * @param {string} str String to translate.
           */
-        public translate(str: string, params: any[] = null): string
-        {
+        public translate(str: string, params: any[]= null): string {
             var ucStr: string = str.toUpperCase();
             var translated: string = this.strings[ucStr];
             var strParametered: string = translated;
@@ -46,7 +42,7 @@ module System.Utils
                         var r = params[b];
                         return typeof r === 'string' ? r : a;
                     }
-                );
+                    );
             }
 
             if (translated) {
@@ -113,8 +109,7 @@ module System.Utils
           * @param {string} str String to translate.
           * @param {string} translation Translation of string.
           */
-        public addTranslation(str: string, translation: string)
-        {
+        public addTranslation(str: string, translation: string) {
             this.strings[str.toUpperCase()] = translation;
         }
     }
