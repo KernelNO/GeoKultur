@@ -20,23 +20,23 @@ module App
         public ssrURL: string = 'https://ws.geonorge.no/SKWS3Index/ssr/sok';
 
         // For "prod"
-        public routeAdminIndexUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/RouteIndex";
-        public routeAdminDownloadUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Route";
-        public poiTypeDataUrl: string = "http://knappen.konge.net/KNappenService.Prod/FileService.aspx?file=TypeInfo.json";
-        public feedbackUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Feedback";
-        public adminRouteUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Route";
-        public webProxy: string = "http://knappen.konge.net/KNappenService.Prod/WebProxy.aspx?url=";
+        //public routeAdminIndexUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/RouteIndex";
+        //public routeAdminDownloadUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Route";
+        //public poiTypeDataUrl: string = "http://knappen.konge.net/KNappenService.Prod/FileService.aspx?file=TypeInfo.json";
+        //public feedbackUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Feedback";
+        //public adminRouteUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Route";
+        //public webProxy: string = "http://knappen.konge.net/KNappenService.Prod/WebProxy.aspx?url=";
 
         public numSearchProviders: number = 3;
         public digitakArkivetPropertyCategory:string = "Historie og samfunn";
         
         // For local debugging
-        //public routeAdminIndexUrl: string = "http://localhost:44000/api/RouteIndex";
-        //public routeAdminDownloadUrl: string = "http://localhost:44000/api/Route";
-        //public poiTypeDataUrl: string = "http://localhost:44000/FileService.aspx?file=TypeInfo.json";
-        //public feedbackUrl: string = "http://localhost:44000/api/Feedback";
-        //public adminRouteUrl: string = "http://localhost:44000/api/Route";
-        //public webProxy: string = "http://localhost:44000/WebProxy.aspx?url=";
+        //public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
+        //public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";
+        public poiTypeDataUrl: string = "http://localhost:42001/FileService.aspx?file=TypeInfo.json";
+        public feedbackUrl: string = "http://localhost:42001/api/Feedback";
+        public adminRouteUrl: string = "http://localhost:42001/api/Route";
+        public webProxy: string = "http://localhost:42001/WebProxy.aspx?url=";
     }
 }
 var config = new App.Config();
