@@ -31,8 +31,8 @@ module App
         public digitakArkivetPropertyCategory:string = "Historie og samfunn";
         
         // For local debugging
-        //public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
-        //public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";
+        public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
+        public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";
         public poiTypeDataUrl: string = "http://localhost:42001/FileService.aspx?file=TypeInfo.json";
         public feedbackUrl: string = "http://localhost:42001/api/Feedback";
         public adminRouteUrl: string = "http://localhost:42001/api/Route";
