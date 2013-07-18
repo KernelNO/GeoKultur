@@ -170,23 +170,11 @@
     <script>
         $(document).ready(function () {
             $("#mainSection").hide().delay(1000).show();
-            $("#routeTabs").tabs();
-
-            $("#sortableEditorialRoutes").sortable();
-            $("#sortableEditorialRoutes").disableSelection();
-
-            $("#addPoiToRoute").mousedown(function () {
-                $("#addPoiToRouteForm").toggle();
-            });
 
             $(document).mousedown(function () {
                 $('#mainPopupMenu').hide();
             });
 
-            $("#headerMenuBtn").mousedown(function (e) {
-                $('#mainPopupMenu').toggle();
-                e.stopPropagation();
-            });
 
             $("#poiPreview").mousedown(function (e) {
                 e.stopPropagation();
@@ -245,6 +233,7 @@
         jQuery(window).resize(resizeWindow);
         viewController.addSelectEvent(function (event, oldView, newView) { resizeWindow(); });
         viewController.addPostSelectEvent(function (event, oldView, newView) { if (oldView && oldView.name == "poiView") poiController.closeDetail(); });
+        viewController.addPostSelectEvent(function (event, oldView, newView) { if (newView && newView.name == "homeView") $("#headerSection").hide(); else $("#headerSection").show();});
 
         function resizeWindow() {
             var _window = $(window);
@@ -294,9 +283,6 @@
 </head>
 <body>
     <div id="headerSection" class="headerSection">
-        <div class="popupMenuOpenButton left" id="headerMenuBtn">
-            <img src="Content/images/MenuImages/menu_Inactive.png" />
-        </div>
         <div id="logoFrame" class="middle nobr">
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Home.png" onmousedown="viewController.selectView('homeView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Search.png" onmousedown="viewController.selectView('searchView'); return false;" />
@@ -350,6 +336,7 @@
         </div>-->
         <div id="homeView" class="contentPage">
             
+            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width:90%;max-width:600px" class="middle"/>
             <ul class="plainlist">
                     <li class="">
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
@@ -387,32 +374,11 @@
 
         <div id="listView" class="contentPage">
             <!-- Fill this with data from Norvegiana in this format: <h3><div> -->
-            <div id="routeName">
-                <h3></h3>
-            </div>
             <div id="listCount" class="resultListCentered">
             </div>
             <div id="listAccordion">
             </div>
             <div id="listPager" class="resultListCentered">
-            </div>
-        </div>
-        <div id="routeView" class="contentPage">
-            <input type="button" id="btnCache" value="Forh&aring;ndslagre" />
-
-            <div id="routeTabs">
-                <ul>
-                    <li><a href="#routeListEditorial" class="translate">$T[Recommended]</a></li>
-                    <li><a href="#routeListUser" class="translate">$T[User defined]</a></li>
-                </ul>
-                <div id="routeListEditorial">
-                    <ul id="editorialRoutes" class="routes">
-                    </ul>
-                </div>
-                <div id="routeListUser">
-                    <ul id="userRoutes" class="routes">
-                    </ul>
-                </div>
             </div>
         </div>
         <div id="mapView" class="contentPage" style="background-color: lightgrey;">
@@ -628,40 +594,6 @@
         <!--            Kultur og Naturreise-->
 
     </div>
-    <div id="mainPopupMenu" class="popupMenu">
-        <div class="popupMenuButton" onmousedown="$('#mainPopupMenu').hide(); return false;">
-            <img src="Content/images/MenuImages/menu_Active.png" />
-        </div>
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('mapView'); return false;">
-            <img src="Content/images/MenuImages/mapIcon.png" />$T[Map]
-        </div>
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('arView'); return false;">
-            <img src="Content/images/MenuImages/ar.png" />$T[Camera]
-        </div>
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('listView'); return false;">
-            <img src="Content/images/MenuImages/list.png" />$T[List]
-        </div>
-<!--        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('routeView'); return false;">
-            <img src="Content/images/MenuImages/routes.png" />$T[Routes]
-        </div>-->
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('searchView'); return false;">
-            <img src="Content/images/MenuImages/search.png" />$T[Search]
-        </div>
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('settingsView'); return false;">
-            <img src="Content/images/MenuImages/settings.png" />$T[Settings]
-        </div>
-<!--        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('feedbackView'); return false;">
-            <img src="Content/images/MenuImages/feedback.png" />$T[Feedback]
-        </div>-->
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('aboutView'); return false;">
-            <img src="Content/images/MenuImages/about.png" />$T[About]
-        </div>
-        <div class="popupMenuButton translate" onmousedown="$('#mainPopupMenu').hide(); viewController.selectView('debugView'); return false;">$T[Debug log]</div>
-        <img src="Content/images/topLogo.png" class="popupMenuButton" />
-    </div>
-    <script>
-        $('#mainPopupMenu').hide();
-    </script>
 
 
     <script src="http://knappen.konge.net/KNappen_Script.js"></script>
