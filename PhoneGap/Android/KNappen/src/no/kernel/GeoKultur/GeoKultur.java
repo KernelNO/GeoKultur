@@ -17,12 +17,12 @@
        under the License.
  */
 
-package no.kulturradet.KNappen;
+package no.kernel.GeoKultur;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class KNappen extends DroidGap
+public class GeoKultur extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)

@@ -126,7 +126,7 @@ module App.Controllers {
                 $("body").css('background-color', 'transparent');
                 $("body").css('height', this.oldHeaderSectionHeight);
                 $("html").css('height', this.oldHeaderSectionHeight);
-                //$("#mainSection").hide();
+                $("#mainSection").hide();
                 //$("#headerSectionSize").hide();
                 //$("#logoFrame").hide();
                 // TODO: TEMP, just to make it look ok
