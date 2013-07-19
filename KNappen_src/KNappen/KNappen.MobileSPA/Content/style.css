@@ -335,6 +335,7 @@ input[type=text]{
     top: 0px;
     left: 0px;
     z-index: 99999 !important;
+    display: none; /*Shows or hides in postselect event based on homeview or not, set in main.html*/
 }
 
 .mainSection
@@ -490,14 +491,14 @@ body {
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
 {
-    background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% rgb(239, 246, 247);
+    background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E2FFD8;
     color: black;
     border: solid 1px rgb(231, 245, 247);
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
 {
-    background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% rgb(239, 246, 247);
+    background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E2FFD8;
     color: black;
     border: solid 1px rgb(231, 245, 247);
 }

@@ -159,8 +159,8 @@ module App.Controllers {
 
             var detailAccordion = $("#detailAccordion");
             detailAccordion.accordion({ active: false, collapsible: false });
-            //Todo: fix this later
-            detailAccordion.accordion("option", "icons", { 'header': 'showMoreAccordion', 'activeHeader': 'showLessAccordion' });
+            ////Todo: fix this later
+            //detailAccordion.accordion("option", "icons", { 'header': 'showMoreAccordion', 'activeHeader': 'showLessAccordion' });
             $('#detailAccordion .ui-accordion-content').show();
 
             //$("#addPoiToRoute").mousedown(function () {
