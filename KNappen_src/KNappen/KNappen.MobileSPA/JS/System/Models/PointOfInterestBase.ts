@@ -79,14 +79,14 @@ module System.Models {
             @public
             @type {KnockoutObservableNumber}
         */
-        public iconWidth: KnockoutObservableNumber = ko.observable(40);
+        public iconWidth: KnockoutObservableNumber = ko.observable(32);
         /**
             iconHeight
             @member System.Models.PointOfInterestBase#iconHeight
             @public
             @type {KnockoutObservableNumber}
         */
-        public iconHeight: KnockoutObservableNumber = ko.observable(40);
+        public iconHeight: KnockoutObservableNumber = ko.observable(37);
         /**
             lastKnockDistanceMeter
             @member System.Models.PointOfInterestBase#lastKnownDistanceMeter

@@ -110,12 +110,13 @@ module App.SearchProviders {
                     poi.landingPage(p.delving_landingPage || "");
                     poi.ingress(p.abm_introduction || "");
                     poi.license(p.europeana_rights || "");
-                    if (p.abm_category) {
-                        $.each(p.abm_category, function (k, v: string) {
-                            v = v.replace(new RegExp("\(\d+\)$", "gi"), "");
-                            poi.categories.push(v);
-                        });
-                    }
+                    //if (p.abm_category) {
+                    //    $.each(p.abm_category, function (k, v: string) {
+                    //        v = v.replace(new RegExp("\(\d+\)$", "gi"), "");
+                    //        poi.categories.push(v);
+                    //    });
+                    //}
+                    poi.categories.push("europeana");
 
                     poi.tags(p.dc_subject || "");
                     poi.institution(p.dataProvider || "");

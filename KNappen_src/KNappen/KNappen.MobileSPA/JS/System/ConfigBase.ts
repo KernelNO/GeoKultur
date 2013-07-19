@@ -27,7 +27,7 @@ module System {
           Google Analytics key. Used by {System.Diagnostics.GoogleAnalytics}.
           @type string
           */
-        public googleAnalyticsKey: string = "UA-42135626-1";
+        public googleAnalyticsKey: string = "UA-42356174-2"; // Tedds account
 
         public wikitudeAddPoiDelayMs: number = 1000;
 
