@@ -18,11 +18,11 @@
        under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="no.kulturradet.KNappen"
+    package="no.kernel.GeoKulTur"
     android:hardwareAccelerated="true"
     android:versionCode="1"
-    android:versionName="0.2.2"
-    android:windowSoftInputMode="adjustPan" >
+    android:versionName="0.0.1"
+    android:windowSoftInputMode="adjustPan" android:installLocation="preferExternal">
 
     <supports-screens
         android:anyDensity="true"
@@ -55,7 +55,7 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
         <activity
-            android:name="KNappen"
+            android:name="GeoKultur"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Black.NoTitleBar" >
