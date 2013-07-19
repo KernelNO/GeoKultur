@@ -31,7 +31,7 @@ module App.Providers {
             @public
         */
         public search(searchCriteria: App.Models.SearchCriteria, successCallback: { (searchResult: App.Models.SearchResult): void; }, errorCallback: { (errorMessage: string): void; }) {
-            log.debug("SearchProvider", "Searching: DataSourceNorvegiana");
+            log.debug("SearchProvider", "Searching: All datasources");
 
             var _this = this;
 
@@ -75,7 +75,7 @@ module App.Providers {
 
             this.numSearchProviders = 0;
             if (searchNorvegiana)
-                this.numSearchProviders++;
+                this.numSearchProviders += 2;
             if (searchDigitalArkivet)
                 this.numSearchProviders++;
             if (searchWikipedia)
@@ -98,6 +98,18 @@ module App.Providers {
                     },
                     function (errorMessage: string) {
                         log.debug("SearchProvider", "DataSourceNorvegiana: errorCallback: " + errorMessage);
+                        _this.errorCombine("Norvegiana", errorMessage);
+                    });
+            }
+
+            if (searchNorvegiana) {
+                (new App.SearchProviders.DataSourceEuropeana()).search(searchCriteria,
+                    function (searchResult: App.Models.SearchResult) {
+                        log.debug("SearchProvider", "DataSourceEuropeana: successCallback");
+                        _this.successCombine(searchResult);
+                    },
+                    function (errorMessage: string) {
+                        log.debug("SearchProvider", "DataSourceEuropeana: errorCallback: " + errorMessage);
                         _this.errorCombine("Norvegiana", errorMessage);
                     });
             }

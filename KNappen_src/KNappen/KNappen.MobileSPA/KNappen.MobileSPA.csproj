@@ -238,6 +238,10 @@
     <Content Include="JS\App\Controllers\WindowSizeController.min.js">
       <DependentUpon>WindowSizeController.ts</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="JS\App\SearchProviders\DataSourceEuropeana.ts" />
+    <Content Include="JS\App\SearchProviders\DataSourceEuropeana.js">
+      <DependentUpon>DataSourceEuropeana.ts</DependentUpon>
+    </Content>
     <Content Include="JS\System\Providers\MapCacheProvider.js">
       <DependentUpon>MapCacheProvider.ts</DependentUpon>
     </Content>
@@ -273,7 +277,6 @@
     <Content Include="Scripts\video.js" />
     <Content Include="Templates\Views\About.html" />
     <Content Include="Templates\Views\POIDetails.html" />
-    <Content Include="Templates\TestTemplate.html" />
     <Content Include="Templates\Views\About.html" />
     <Content Include="UnitTests\IUnitTest.js.map">
       <DependentUpon>IUnitTest.ts</DependentUpon>
@@ -605,6 +608,9 @@
     </Content>
     <Content Include="JS\App\Providers\TranslationProviderEN.js.map">
       <DependentUpon>TranslationProviderEN.ts</DependentUpon>
+    </Content>
+    <Content Include="JS\App\SearchProviders\DataSourceEuropeana.js.map">
+      <DependentUpon>DataSourceEuropeana.ts</DependentUpon>
     </Content>
     <None Include="Scripts\OpenLayers.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.debug.js_DoNotUse_NotModified" />

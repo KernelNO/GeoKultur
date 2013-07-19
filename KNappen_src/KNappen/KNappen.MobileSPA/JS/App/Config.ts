@@ -12,6 +12,10 @@ module App
         //if user does not have gps pos, start here by default (oslo sentrum)
         public mapStartPos: System.Models.Position = new System.Models.Position(59.9122, 10.7517);
 
+        public europeana_APIKey: string = "XzRpLCzHj"; // registered to tedd@konge.net
+        public europeana_PrivateKey: string = "nswjZUBKH"; // registered to tedd@konge.net
+        public europeanaURL: string = "http://europeana.eu/api//v2/search.json?callback=?&query=";
+
         public norvegianaAutoRetryDelaySeconds: number = 10;
         public norvegianaAutoRetryCount: number = 3;
         public norvegianaSearchTimeoutSeconds: number = 30;

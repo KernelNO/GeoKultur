@@ -21,6 +21,7 @@
 /// <reference path="SearchProviders/DataSourceDigitalarkivetProperty.ts" />
 /// <reference path="SearchProviders/DataSourceWikiLocation.ts" />
 /// <reference path="SearchProviders/DataSourceNorvegiana.ts" />
+/// <reference path="SearchProviders/DataSourceEuropeana.ts" />
 /// <reference path="Providers/SearchProvider.ts" />
 /// <reference path="Models/SearchResult.ts" />
 /// <reference path="Models/SearchCriteria.ts" />

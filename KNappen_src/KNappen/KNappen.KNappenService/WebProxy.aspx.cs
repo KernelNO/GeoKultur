@@ -38,7 +38,7 @@ namespace KNappen.KNappenService
 
             // Security check
             string hostToLower = uri.Host.ToLower();
-            if (hostToLower == "api.wikilocation.org" || hostToLower == "api.digitalarkivet.arkivverket.no" || hostToLower == "opencache.statkart.no")
+            if (hostToLower == "api.wikilocation.org" || hostToLower == "api.digitalarkivet.arkivverket.no" || hostToLower == "opencache.statkart.no" || hostToLower == "europeana.eu")
                 // Do it, async style!
                 ProcessUrl(uri);
             else
