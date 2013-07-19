@@ -52,7 +52,11 @@ module System {
          * @class System.ConfigBase
          * @classdesc Contains base config (available to System namespace). Inherited by App.Config.
          */
-        constructor() {
+        constructor() {            
+            if (navigator.userAgent.match(/(Android)/)) {
+                this.TemplateProviderFolder = "file:///android_asset/world/KNappen/" + this.TemplateProviderFolder;
+            }
+
             if (navigator.userAgent.match(/(Android)/)) {
                 this.TemplateProviderFolder = "file:///android_asset/world/KNappen/" + this.TemplateProviderFolder;
             }
