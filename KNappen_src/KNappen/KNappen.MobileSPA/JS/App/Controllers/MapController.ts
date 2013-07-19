@@ -25,8 +25,17 @@ module App.Controllers {
             @public
         */
         public PreInit() {
+            var _this = this;
             log.debug("MapController", "PreInit()");
             this.mapProvider = new System.Providers.MapProvider();
+            viewController.addPostSelectEvent(function (event: JQueryEventObject, oldView: System.GUI.ViewControllerItem, newView: System.GUI.ViewControllerItem) {
+                if (newView.name === "mapView") {
+                    windowSizeController.resize();
+                    setTimeout(function () {
+                        _this.mapProvider.map.updateSize();
+                    }, 5000);
+                }
+            });
         }
 
         /**

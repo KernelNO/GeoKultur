@@ -89,10 +89,10 @@ module App.Controllers {
                 $("body").css('height', this.oldBodyHeight);
                 $("html").css('height', this.oldHtmlHeight);
                 //$("#mainSection").css('min-height', this.oldmainPageHeight);
-                $("#headerSection").css('height', this.oldHeaderSectionHeight);
+                //$("#headerSection").css('height', this.oldHeaderSectionHeight);
                 $("#mainSection").show();
-                $("#headerSectionSize").show();
-                $("#logoFrame").show();
+                //$("#headerSectionSize").show();
+                //$("#logoFrame").show();
                 //$("[data-role=page]").show();
                 $("#footerSection").show();
 
@@ -124,13 +124,13 @@ module App.Controllers {
 
                 // Now hide HTML
                 $("body").css('background-color', 'transparent');
-                $("body").css('height', '0');
-                $("html").css('height', '0');
-                $("#mainSection").hide();
-                $("#headerSectionSize").hide();
-                $("#logoFrame").hide();
+                $("body").css('height', this.oldHeaderSectionHeight);
+                $("html").css('height', this.oldHeaderSectionHeight);
+                //$("#mainSection").hide();
+                //$("#headerSectionSize").hide();
+                //$("#logoFrame").hide();
                 // TODO: TEMP, just to make it look ok
-                $("#headerSection").css('height', '24');
+                //$("#headerSection").css('height', '24');
 
                 $("#footerSection").hide();
             }

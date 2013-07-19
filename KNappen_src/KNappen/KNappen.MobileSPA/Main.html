@@ -205,6 +205,12 @@
         }, "Main:AddViews");
 
 
+        startup.addPreInit(function () {
+            viewController.addPostSelectEvent(function(event, oldView, newView) {
+                if (newView.name == "homeView") windowSizeController.HideTopMenu();
+                if (newView.name != "homeView") windowSizeController.ShowTopMenu();
+            });
+        });
 
         startup.addInit(function () {
             viewController.addPostSelectEvent(function (event, oldView, newView) { if (oldView && oldView.name == "poiView") poiController.closeDetail(); });
@@ -236,10 +242,10 @@
         <div id="logoFrame" class="middle nobr">
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Home.png" onmousedown="viewController.selectView('homeView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Search.png" onmousedown="viewController.selectView('searchView'); return false;" />
-            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/List.png" onmousedown="viewController.selectView('listView'); return false;" />
-            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/POI.png" onmousedown="viewController.selectView('mapView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/AR.png" onmousedown="viewController.selectView('arView'); return false;" />
-            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Settings.png" onmousedown="viewController.selectView('settingsView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/POI.png" onmousedown="viewController.selectView('mapView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/List.png" onmousedown="viewController.selectView('listView'); return false;" />
+            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Wrench.png" onmousedown="viewController.selectView('debugView'); return false;" />
             <!--<img class="topMenuImage" src="GeoKultur/Images/Ikoner/About.png" onmousedown="viewController.selectView('aboutView'); return false;" />-->
 
         </div>
@@ -288,6 +294,12 @@
 
             <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width: 90%; max-width: 600px" class="middle" />
             <ul class="plainlist">
+                <li>
+                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('searchView'); return false;">
+                        <img src="GeoKultur/Images/Ikoner/Search.png" />
+                        <h2 class="translate">$T[Search]</h2>
+                    </div>
+                </li>
                 <li class="">
                     <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
                         <img src="GeoKultur/Images/Ikoner/AR.png" />
@@ -417,14 +429,14 @@
             </div>
             <br />
             <script>
-                var adminOpen = 0;
-                $("#logoFrame").mousedown(function () {
-                    adminOpen++;
-                    if (adminOpen > 9) {
-                        $("#adminPasswordDiv").show();
-                        viewController.selectView("settingsView");
-                    }
-                });
+                //var adminOpen = 0;
+                //$("#logoFrame").mousedown(function () {
+                //    adminOpen++;
+                //    if (adminOpen > 9) {
+                //        $("#adminPasswordDiv").show();
+                //        viewController.selectView("settingsView");
+                //    }
+                //});
             </script>
             <div id="adminPasswordDiv" class="hidden">
                 <h3 class="translate">$T[Adminpassword]</h3>
