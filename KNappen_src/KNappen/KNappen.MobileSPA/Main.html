@@ -211,16 +211,18 @@
             // Set to default startup view only if we don't have a valid URL
             if (!viewController.processUrl())
                 viewController.selectView(settings.startView());
-            
+
         }, "Main:SelectView");
 
         startup.addPreInit(function () {
             templateProvider.queueTemplateDownload("Views/About.html",
                 function (data) { $("#aboutView").html(data); },
-                function (message) { $("#aboutView").html("Error downloading template: " + message);
-            });
-        }, "Main:DownloadTemplates");
+                function (message) {
+                    $("#aboutView").html("Error downloading template: " + message);
+                });
 
+            templateProvider.queueTemplateDownload("Views/POIDetails.html");
+        }, "Main:DownloadTemplates");
     </script>
 
     <script>
@@ -475,6 +477,7 @@
         </div>
 
         <div id="aboutView" class="contentPage">
+
         </div>
 
         <div id="debugView" class="contentPage">

@@ -271,6 +271,8 @@
     </Content>
     <Content Include="Scripts\typings\videojs\videojs.d.ts" />
     <Content Include="Scripts\video.js" />
+    <Content Include="Templates\Views\About.html" />
+    <Content Include="Templates\Views\POIDetails.html" />
     <Content Include="Templates\TestTemplate.html" />
     <Content Include="Templates\Views\About.html" />
     <Content Include="UnitTests\IUnitTest.js.map">
@@ -1022,6 +1024,10 @@
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.                                                                                      
        Other similar extension points exist, see Microsoft.Common.targets.                                                                                                                
   <Target Name="BeforeBuild">                                                                                                                                                             
