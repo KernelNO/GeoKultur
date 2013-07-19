@@ -25,12 +25,13 @@ module App.Controllers {
 
             this.originalHeaderSectionHeight = this.headerSection.css('height');
             this.resize();
+            
         }
 
         public PreInit() {
             var _this = this;
             jQuery(window).resize(function () { _this.resize(); });
-            viewController.addSelectEvent(function (event, oldView, newView) {
+            viewController.addPostSelectEvent(function (event, oldView, newView) {
                 _this.resize();
             });
         
@@ -41,19 +42,16 @@ module App.Controllers {
         }
 
         public resize() {
-            var windowHeight = this._window.height();
-            var headerHeight = this.headerSection.height();
-            var footerHeight = this.footerSection.height();
+            var windowHeight = this._window.outerHeight();
+            var headerHeight = this.headerSection.outerHeight();
+            var footerHeight = this.footerSection.outerHeight();
             var mainHeight = windowHeight - headerHeight - footerHeight;
 
             if (!viewController || !viewController.getCurrentView() || viewController.getCurrentView().name != "arView") {
-                this.headerSectionSize.css('height', headerHeight + "px");
-                this.mainSection.css('height', mainHeight + "px");
-                this.map.css('height', mainHeight + "px");
-                setTimeout(function () {
-                    if (mapController.mapProvider)
-                        mapController.mapProvider.map.updateSize();
-                }, 50);
+                this.headerSectionSize.outerHeight(headerHeight);
+                this.mainSection.outerHeight(mainHeight);
+                this.map.outerHeight(mainHeight);
+            
 
                 log.debug("WindowSizeController", "Resizing mainSection to " + mainHeight + "px (windows: " + windowHeight + ", header: " + headerHeight + ", footer: " + footerHeight + ")");
             }

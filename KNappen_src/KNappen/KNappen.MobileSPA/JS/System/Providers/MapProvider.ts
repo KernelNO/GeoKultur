@@ -140,6 +140,14 @@ module System.Providers {
             this.map.setLayerIndex(this.layerWMS, 1000);
         }
 
+        public updateSize() {
+            if (this.layerWMS) {
+                this.map.removeLayer(this.layerWMS);
+                this.map.addLayer(this.layerWMS);
+            }
+            this.map.updateSize();
+        }
+
         /** @ignore */
         public createLayer(mapTypeStr: string, strategies: any = null, buffer: number = 1): any {
             if (!strategies)

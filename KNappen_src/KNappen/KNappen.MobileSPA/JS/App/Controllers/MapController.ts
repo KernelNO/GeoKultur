@@ -28,12 +28,22 @@ module App.Controllers {
             var _this = this;
             log.debug("MapController", "PreInit()");
             this.mapProvider = new System.Providers.MapProvider();
+
             viewController.addPostSelectEvent(function (event: JQueryEventObject, oldView: System.GUI.ViewControllerItem, newView: System.GUI.ViewControllerItem) {
                 if (newView.name === "mapView") {
-                    windowSizeController.resize();
+                    //windowSizeController.resize();
                     setTimeout(function () {
-                        _this.mapProvider.map.updateSize();
-                    }, 5000);
+                        if (mapController.mapProvider) {
+                            //mapController.mapProvider.map.updateSize();
+                            //if (mapController.mapProvider.map.baseLayer)
+                            //    mapController.mapProvider.map.baseLayer.redraw();
+                            //var map = $("#map");
+                            //map.height(map.height() - 1);
+                            //map.height(map.height() + 1);
+                            mapController.mapProvider.updateSize();
+                            
+                        }
+                    }, 50);
                 }
             });
         }
