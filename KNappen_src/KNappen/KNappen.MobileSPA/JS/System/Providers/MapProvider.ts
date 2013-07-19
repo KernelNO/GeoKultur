@@ -144,6 +144,7 @@ module System.Providers {
             if (this.layerWMS) {
                 this.map.removeLayer(this.layerWMS);
                 this.map.addLayer(this.layerWMS);
+                this.map.setLayerIndex(this.layerWMS, 1000);
             }
             this.map.updateSize();
         }

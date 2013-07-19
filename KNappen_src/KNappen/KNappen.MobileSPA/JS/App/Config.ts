@@ -37,10 +37,17 @@ module App
         // For local debugging
         public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
         public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";
-        public poiTypeDataUrl: string = "http://localhost:42001/FileService.aspx?file=TypeInfo.json";
+        public poiTypeDataUrl: string = "Files/TypeInfo.json";
         public feedbackUrl: string = "http://localhost:42001/api/Feedback";
         public adminRouteUrl: string = "http://localhost:42001/api/Route";
         public webProxy: string = "http://localhost:42001/WebProxy.aspx?url=";
+
+        public configInit() {
+            if (navigator.userAgent.match(/(Android)/)) {
+                this.poiTypeDataUrl = "file:///android_asset/world/KNappen/" + this.poiTypeDataUrl;
+            }
+        }
     }
 }
 var config = new App.Config();
+config.configInit();

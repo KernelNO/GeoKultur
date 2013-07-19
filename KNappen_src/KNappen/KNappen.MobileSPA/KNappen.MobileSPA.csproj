@@ -1031,6 +1031,7 @@
     <Content Include="JS\App\SearchProviders\DataSourceEuropeana.js.map">
       <DependentUpon>DataSourceEuropeana.ts</DependentUpon>
     </Content>
+    <Content Include="Files\TypeInfo.json" />
     <None Include="Scripts\OpenLayers.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.debug.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.js_DoNotUse_NotModified" />

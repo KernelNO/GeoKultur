@@ -1,0 +1,29 @@
+﻿{ 
+    "categories": [ 
+		{ "text": "Wikipedia",				"category": "Wikipedia",				"icon": "GeoKultur/Images/MapIcons/Media/wiki-export.png"},
+        { "text": "Arkeologi",              "category": "Arkeologi",				"icon": "GeoKultur/Images/MapIcons/Culture/museum_archeological.png" },
+        { "text": "Kulturminner",           "category": "Kulturminner",				"icon": "GeoKultur/Images/MapIcons/Tourism/sight-2.png" },
+        { "text": "Historie og samfunn",    "category": "Historie og samfunn",		"icon": "GeoKultur/Images/MapIcons/Culture/historical_museum.png" },
+        { "text": "Arkitektur",             "category": "Arkitektur",				"icon": "GeoKultur/Images/MapIcons/Tourism/historicalquarter.png" },
+        { "text": "Dyr",                    "category": "Dyr",						"icon": "GeoKultur/Images/MapIcons/Nature/zoo.png" },
+        { "text": "Planter",                "category": "Planter",					"icon": "GeoKultur/Images/MapIcons/Nature/flowers.png" },
+        { "text": "Verneområder",           "category": "Verneområder",				"icon": "GeoKultur/Images/MapIcons/Tourism/worldheritagesite.png" },
+        { "text": "Kunst",                  "category": "Kunst",					"icon": "GeoKultur/Images/MapIcons/Stores/artgallery.png" },
+        { "text": "Stedsnavn",              "category": "Stedsnavn",				"icon": "GeoKultur/Images/MapIcons/Tourism/signpost-2.png" },
+        { "text": "Fugler",                 "category": "Fugler",					"icon": "GeoKultur/Images/MapIcons/Nature/birds-2.png" },
+        { "text": "Europeana",              "category": "Europeana",				"icon": "GeoKultur/Images/MapIcons/Tourism/sight-2.png" },
+        { "text": "Kombinasjon",            "category": "*",						"icon": "GeoKultur/Images/MapIcons/Tourism/sight-2.png" }
+    ],
+    "genres": [
+        { "text": "Fagdata",            "type": "fagdata",							"icon": "GeoKultur/Images/MapIcons/Culture/regroup.png" },
+        { "text": "Leksikonartikler",   "type": "wikipedia",						"icon": "GeoKultur/Images/MapIcons/Media/wiki-export.png" },
+        { "text": "Fortellinger",       "type": "digitaltfortalt",					"icon": "GeoKultur/Images/MapIcons/Culture/library.png" }
+    ],
+    "medias": [
+		{ "text": "Video",              "type": "VIDEO",                            "icon": "GeoKultur/Images/MapIcons/Media/video.png" },
+        { "text": "Lyd",                "type": "SOUND",                            "icon": "GeoKultur/Images/MapIcons/Media/audio.png" }, 
+        { "text": "Bilde",              "type": "IMAGE",                            "icon": "GeoKultur/Images/MapIcons/Media/photo.png" },
+        { "text": "Tekst",              "type": "TEXT",                             "icon": "GeoKultur/Images/MapIcons/Media/text.png" },
+		{ "text": "Kombinasjon",        "type": "*",                                "icon": "GeoKultur/Images/MapIcons/Media/text.png" }
+    ]
+}

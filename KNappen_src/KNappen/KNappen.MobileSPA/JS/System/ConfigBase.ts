@@ -53,6 +53,11 @@ module System {
          * @classdesc Contains base config (available to System namespace). Inherited by App.Config.
          */
         constructor() {
+
+            if (navigator.userAgent.match(/(Android)/)) {
+                this.TemplateProviderFolder = "file:///android_asset/world/KNappen/" + this.TemplateProviderFolder;
+            }
+
             //this.openLayersMapUrl["std0"] = "http://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&";
             this.openLayersMapUrl["std0"] = "http://knappen.konge.net/KNappenService.Prod/WebProxy.aspx?url=http%3A%2F%2Fopencache.statkart.no%2Fgatekeeper%2Fgk%2Fgk.open%3FSERVICE%3DWMS%26";
             //this.openLayersMapUrl["std0"] = "http://localhost:44000/WebProxy.aspx?url=http%3A%2F%2Fopencache.statkart.no%2Fgatekeeper%2Fgk%2Fgk.open%3FSERVICE%3DWMS%26";
