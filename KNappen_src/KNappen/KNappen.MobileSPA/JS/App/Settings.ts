@@ -44,8 +44,14 @@ module App {
 
         private setOverrides() {
             this.mapTypes = ko.observableArray([
-                { id: "Google", name: "Google Maps" },
-            { id: "WMS:std0:norges_grunnkart", name: "Norges grunnkart" },
+                { id: "GoogleStreets", name: "Google Streets" },
+                { id: "GooglePhysical", name: "Google Physical" },
+                { id: "GoogleHybrid", name: "Google Hybrid" },
+                { id: "GoogleSatellite", name: "Google Satellite" },
+                { id: "BingRoad", name: "Bing Road" },
+                { id: "BingHybrid", name: "Bing Hybrid" },
+                { id: "BingAerial", name: "Bing Aerial" },
+                { id: "WMS:std0:norges_grunnkart", name: "Norges grunnkart" },
                 { id: "WMS:std0:topo2", name: "Topologisk" }
 
             //{ id: "nib0:NiB", name: "Flyfoto" },

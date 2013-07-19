@@ -6,7 +6,8 @@
 */
 module System.Providers {
     declare var OpenLayers;
-    declare var config;
+    declare var config: System.ConfigBase;
+    declare var google;
 
     // TODO: Fix for black tiles: https://github.com/ahocevar/openlayers/commit/6607bcc0bbc2032bc6196e5b4090a16cdfeb8837
     // Async fetch for CacheRead: http://osgeo-org.1560.x6.nabble.com/CacheRead-and-CacheWrite-with-Web-SQL-Storage-td4679807.html
@@ -163,12 +164,22 @@ module System.Providers {
 
 
 
-            if (mapType == "Google") {
-                return new OpenLayers.Layer.Google(
-                    "Google Streets"
-                // default type, no change needed here
-                    );
-            }if (mapType == "WMS") {
+            if (mapType == "GoogleStreets")
+                return new OpenLayers.Layer.Google("Google Streets");
+            if (mapType == "GooglePhysical")
+                return new OpenLayers.Layer.Google("Google Physical", { type: google.maps.MapTypeId.TERRAIN });
+            if (mapType == "GoogleHybrid")
+                return new OpenLayers.Layer.Google("Google Hybrid", { type: google.maps.MapTypeId.HYBRID });
+            if (mapType == "GoogleSatellite")
+                return new OpenLayers.Layer.Google("Google Satellite", { type: google.maps.MapTypeId.SATELLITE });
+            if (mapType == "BingRoad")
+            return new OpenLayers.Layer.Bing({name: "Bing Road", key: config.mapBingAPIKey, type: "Road" });
+            if (mapType == "BingHybrid")
+                return new OpenLayers.Layer.Bing({ name: "Bing Hybrid", key: config.mapBingAPIKey, type: "AerialWithLabels" });
+            if (mapType == "BingAerial")
+                return new OpenLayers.Layer.Bing({ name: "Bing Aerial", key: config.mapBingAPIKey,type: "Aerial" });
+            
+            if (mapType == "WMS") {
                 return new OpenLayers.Layer.WMS("OpenLayers WMS",
                     config.openLayersMapUrl[mapUrlType],
                     {
