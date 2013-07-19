@@ -210,6 +210,13 @@
                 viewController.selectView(settings.startView());
         }, "Main:SelectView");
 
+        startup.addPreInit(function () {
+            templateProvider.queueTemplateDownload("Views/About.html",
+                function (data) { $("#aboutView").html(data); },
+                function (message) { $("#aboutView").html("Error downloading template: " + message);
+            });
+        }, "Main:DownloadTemplates");
+
 
 
         startup.addPostInit(function () {
@@ -234,7 +241,7 @@
         jQuery(window).resize(resizeWindow);
         viewController.addSelectEvent(function (event, oldView, newView) { resizeWindow(); });
         viewController.addPostSelectEvent(function (event, oldView, newView) { if (oldView && oldView.name == "poiView") poiController.closeDetail(); });
-        viewController.addPostSelectEvent(function (event, oldView, newView) { if (newView && newView.name == "homeView") $("#headerSection").hide(); else $("#headerSection").show();});
+        viewController.addPostSelectEvent(function (event, oldView, newView) { if (newView && newView.name == "homeView") $("#headerSection").hide(); else $("#headerSection").show(); });
 
         function resizeWindow() {
             var _window = $(window);
@@ -336,41 +343,41 @@
             </div>
         </div>-->
         <div id="homeView" class="contentPage">
-            
-            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width:90%;max-width:600px" class="middle"/>
+
+            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width: 90%; max-width: 600px" class="middle" />
             <ul class="plainlist">
-                    <li class="">
-                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
-                            <img src="GeoKultur/Images/Ikoner/AR.png" />
-                            <h2 class="translate">$T[Augmented Reality]</h2>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('mapView'); return false;">
-                            <img class="middle" src="GeoKultur/Images/Ikoner/POI.png" />
-                            <h2 class="translate">$T[Map]</h2>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('listView'); return false;">
-                            <img src="GeoKultur/Images/Ikoner/List.png" />
-                            <h2 class="translate">$T[List]</h2>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('settingsView'); return false;">
-                            <img src="GeoKultur/Images/Ikoner/Settings.png" />
-                            <h2 class="translate">$T[Settings]</h2>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('aboutView'); return false;">
-                            <img src="GeoKultur/Images/Ikoner/About.png" />
-                            <h2 class="translate">$T[About]</h2>
-                        </div>
-                    </li>
-                </ul>
-            
+                <li class="">
+                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
+                        <img src="GeoKultur/Images/Ikoner/AR.png" />
+                        <h2 class="translate">$T[Augmented Reality]</h2>
+                    </div>
+                </li>
+                <li>
+                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('mapView'); return false;">
+                        <img class="middle" src="GeoKultur/Images/Ikoner/POI.png" />
+                        <h2 class="translate">$T[Map]</h2>
+                    </div>
+                </li>
+                <li>
+                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('listView'); return false;">
+                        <img src="GeoKultur/Images/Ikoner/List.png" />
+                        <h2 class="translate">$T[List]</h2>
+                    </div>
+                </li>
+                <li>
+                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('settingsView'); return false;">
+                        <img src="GeoKultur/Images/Ikoner/Settings.png" />
+                        <h2 class="translate">$T[Settings]</h2>
+                    </div>
+                </li>
+                <li>
+                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('aboutView'); return false;">
+                        <img src="GeoKultur/Images/Ikoner/About.png" />
+                        <h2 class="translate">$T[About]</h2>
+                    </div>
+                </li>
+            </ul>
+
         </div>
 
         <div id="listView" class="contentPage">
@@ -529,14 +536,8 @@
         </div>
 
         <div id="aboutView" class="contentPage">
-            <h2>About GeopCulture</h2>
-            <p></p>
-            <p>
-                GeoKultur is a tool to discover culture around you. It was originally developed for the Apps4Norway national coding competition for best use of open data, and it won first place.
-                <br />
-            </p>
-            <p>GeoKultur is BSD-licensed open source code. Although initially separate code, version 2 of GeoKultur is now based on the source code for KNappen developed by the Arts Council of Norway.</p>
         </div>
+
         <div id="debugView" class="contentPage">
             <div id="debugLog">
             </div>
