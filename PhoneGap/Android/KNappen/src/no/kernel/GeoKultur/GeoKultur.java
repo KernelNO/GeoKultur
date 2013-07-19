@@ -17,12 +17,12 @@
        under the License.
  */
 
-package no.kernel.GeoKultur;
+package no.kernel.GeoKulTur;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class GeoKultur extends DroidGap
+public class GeoKulTur extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)

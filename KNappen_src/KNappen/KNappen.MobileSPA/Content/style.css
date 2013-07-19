@@ -520,8 +520,8 @@ body {
    It also prevents tile blinking effects in iOS 5.
    See https://github.com/openlayers/openlayers/issues/511
 */
-@media (-webkit-transform-3d) {
+/*@media (-webkit-transform-3d) {
     img.olTileImage .mapTypIconButton {
         -webkit-transform: translate3d(0, 0, 0);
     }
-}
+}*/

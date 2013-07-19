@@ -29,7 +29,7 @@ module System {
           */
         public googleAnalyticsKey: string = "UA-42356174-2"; // Tedds account
 
-        public wikitudeAddPoiDelayMs: number = 1000;
+        public wikitudeAddPoiDelayMs: number = 500;
 
         public openLayersMapUrl: { [key: string]: string; } = {};
 
@@ -53,7 +53,6 @@ module System {
          * @classdesc Contains base config (available to System namespace). Inherited by App.Config.
          */
         constructor() {
-
             if (navigator.userAgent.match(/(Android)/)) {
                 this.TemplateProviderFolder = "file:///android_asset/world/KNappen/" + this.TemplateProviderFolder;
             }
