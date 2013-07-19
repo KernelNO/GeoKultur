@@ -44,10 +44,10 @@ module App {
 
         private setOverrides() {
             this.mapTypes = ko.observableArray([
-                { id: "GoogleStreets", name: "Google Streets" },
-                { id: "GooglePhysical", name: "Google Physical" },
-                { id: "GoogleHybrid", name: "Google Hybrid" },
-                { id: "GoogleSatellite", name: "Google Satellite" },
+                //{ id: "GoogleStreets", name: "Google Streets" },
+                //{ id: "GooglePhysical", name: "Google Physical" },
+                //{ id: "GoogleHybrid", name: "Google Hybrid" },
+                //{ id: "GoogleSatellite", name: "Google Satellite" },
                 { id: "BingRoad", name: "Bing Road" },
                 { id: "BingHybrid", name: "Bing Hybrid" },
                 { id: "BingAerial", name: "Bing Aerial" },

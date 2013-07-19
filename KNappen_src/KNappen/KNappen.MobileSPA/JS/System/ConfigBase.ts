@@ -69,8 +69,8 @@ module System {
             //this.openLayersMapUrl["nib0"] = "http://gatekeeper2.geonorge.no/BaatGatekeeper/gk/gk.nibcache?SERVICE=WMS&VERSION=1.1.1&GKT=1E9156534710F9F931B5EEC69FF377B9F6BC6A323696A5EEDFFC660CE39D323580D78D097EF1DB60446FA6981469D4101AC9B95040AF2D3AAB579AAE6F8C5E79";
             this.openLayersMapUrl["nib0"] = "http://wms.geonorge.no/skwms1/wms.kartdata_nib/TI_BK3GBKL3";
 
-            this.mapCacheTileLimit["standard"] = 100;
-            this.mapCacheTileLimit["precache"] = 1000;
+            this.mapCacheTileLimit["standard"] = 50;
+            this.mapCacheTileLimit["precache"] = 100;
             //this.mapCacheTileLimit["routes"] = 1000;
 
             this.mapCacheLevelDetail[16] = new MapCacheLevelItem(3);
