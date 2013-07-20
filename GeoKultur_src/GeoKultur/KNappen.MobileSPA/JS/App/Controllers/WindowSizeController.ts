@@ -25,7 +25,7 @@ module App.Controllers {
 
             this.originalHeaderSectionHeight = this.headerSection.css('height');
             this.resize();
-            
+        
         }
 
         public PreInit() {
@@ -34,7 +34,7 @@ module App.Controllers {
             viewController.addPostSelectEvent(function (event, oldView, newView) {
                 _this.resize();
             });
-        
+
         }
 
         public PostInit() {
@@ -51,7 +51,7 @@ module App.Controllers {
                 this.headerSectionSize.outerHeight(headerHeight);
                 this.mainSection.outerHeight(mainHeight);
                 this.map.outerHeight(mainHeight);
-            
+                
 
                 log.debug("WindowSizeController", "Resizing mainSection to " + mainHeight + "px (windows: " + windowHeight + ", header: " + headerHeight + ", footer: " + footerHeight + ")");
             }
