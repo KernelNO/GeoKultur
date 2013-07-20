@@ -73,6 +73,11 @@ module App.Providers {
 
             }
 
+            // Disabling Digitalarkivet
+            searchDigitalArkivet = false;
+            // Disabling Wikipedia
+            searchWikipedia = false;
+
             this.numSearchProviders = 0;
             if (searchNorvegiana)
                 this.numSearchProviders += 2;

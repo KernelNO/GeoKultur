@@ -10,3 +10,5 @@ toastr			MIT License		https://github.com/CodeSeven/toastr
 LatLon			Attribution 3.0		http://www.movable-type.co.uk/scripts/latlong.html
 Proj4JS			MIT License		http://trac.osgeo.org/proj4js/
 SoundManager2		BSD License		http://www.schillmania.com/projects/soundmanager2/
+Map icons		CC 3.0 BY-SA		http://mapicons.nicolasmollet.com/
+
