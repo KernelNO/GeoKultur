@@ -222,13 +222,12 @@
         }, "Main:SelectView");
 
         startup.addPreInit(function () {
-            templateProvider.queueTemplateDownload("Views/About.html",
+            templateProvider.queueTemplateDownload(config.templateAboutView,
                 function (data) { $("#aboutView").html(data); },
                 function (message) {
-                    $("#aboutView").html("Error downloading template: " + message);
+                    $("#aboutView").html("Error downloading template " + config.templateAboutView + ": " + message);
                 });
 
-            templateProvider.queueTemplateDownload("Views/POIDetails.html");
         }, "Main:DownloadTemplates");
     </script>
 
@@ -252,87 +251,7 @@
 
     </div>
     <div id="headerSectionSize"></div>
-    <!--        <div id="arMenu" style="visibility:collapse; z-index: -9999;">
-            <input type="button" onmousedown="viewController.selectView('mapView'); return false;" value="Kart" />
-        </div>-->
-
-    <!--<div data-role="page" class="wrapper" id="mainPage">-->
     <div id="mainSection" class="mainSection">
-        <!-- <div id="toolbarHeader" data-role="header" data-position="fixed">
-            <!-- Menu filled with options from the ViewController -->
-        <!--            <a href="#menu" data-rel="panel" data-role="button">Meny</a>
-            <h2><img src="Content/images/topLogo.png" /></h2>
-            <a href="#search" onmousedown="viewController.selectView('searchView')">Søk</a>
-        </div>
-        <div id="toolbarHeaderPlaceholder">
-            
-        </div>-->
-
-        <!--  <div id="menu" data-role="panel" data-animate="false" data-display="overlay" data-transition="none">
-            <div class="ui-panel-inner">
-                <div class="menuBtn" data-rel="close" data-role="button">Lukk meny</div>
-                <div class="menuBtn" onmousedown="viewController.selectView('mapView')" data-rel="close" data-role="button">Kart</div>
-                <div class="menuBtn" onmousedown="viewController.selectView('arView')" data-rel="close"data-role="button">Utvidet virkelighet</div>
-                <div class="menuBtn" onmousedown="viewController.selectView('listView')" data-rel="close"data-role="button">Liste</div>
-                <div class="menuBtn" onmousedown="viewController.selectView('searchView')" data-rel="close"data-role="button">Søk</div>
-                <div class="menuBtn" onmousedown="viewController.selectView('settingsView')" data-rel="close"data-role="button">Innstillinger</div>
-                <!--<div class="menuBtn" onmousedown="viewController.selectView('feedbackView')" data-rel="close"data-role="button">Tilbakemelding</div>-->
-        <!--<div class="menuBtn" onmousedown="viewController.selectView('aboutView')" data-rel="close"data-role="button">Om Appen</div>-->
-        <!--<div class="menuBtn" onmousedown="viewController.selectView('debugView')" data-rel="close"data-role="button">Debug log</div>
-        </div>
-        </div>-->
-
-
-
-        <!--        <div id="searchPanel" data-role="content" data-display="overlay">
-            <div id="currentSearchText">Søk..</div>
-            <div id="searchToolbar">
-                    <input type="button" value="Søk" onmousedown="searchController.doSearch();" />
-            </div>
-        </div>-->
-        <div id="homeView" class="contentPage">
-            <div  class="width:100%; height:100%;" >
-            <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width: 90%; max-width: 600px" class="middle" />
-            <ul class="plainlist">
-                <li>
-                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('searchView'); return false;">
-                        <img src="GeoKultur/Images/Ikoner/Search.png" />
-                        <h2 class="translate">$T[Search]</h2>
-                    </div>
-                </li>
-                <li class="">
-                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
-                        <img src="GeoKultur/Images/Ikoner/AR.png" />
-                        <h2 class="translate">$T[Augmented Reality]</h2>
-                    </div>
-                </li>
-                <li>
-                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('mapView'); return false;">
-                        <img class="middle" src="GeoKultur/Images/Ikoner/POI.png" />
-                        <h2 class="translate">$T[Map]</h2>
-                    </div>
-                </li>
-                <li>
-                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('listView'); return false;">
-                        <img src="GeoKultur/Images/Ikoner/List.png" />
-                        <h2 class="translate">$T[List]</h2>
-                    </div>
-                </li>
-                <li>
-                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('settingsView'); return false;">
-                        <img src="GeoKultur/Images/Ikoner/Settings.png" />
-                        <h2 class="translate">$T[Settings]</h2>
-                    </div>
-                </li>
-                <li>
-                    <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('aboutView'); return false;">
-                        <img src="GeoKultur/Images/Ikoner/About.png" />
-                        <h2 class="translate">$T[About]</h2>
-                    </div>
-                </li>
-            </ul>
-                </div>
-        </div>
 
         <div id="listView" class="contentPage">
             <!-- Fill this with data from Norvegiana in this format: <h3><div> -->
@@ -490,7 +409,6 @@
         </div>
 
         <div id="aboutView" class="contentPage">
-
         </div>
 
         <div id="debugView" class="contentPage">
@@ -502,42 +420,6 @@
 
         <!-- Trying this to make stuff prettier -->
         <div id="poiView" class="contentPage">
-            <div id="poiDetail">
-                <!--                <div id="poiToolbar">
-                    <img src="Content/images/AppIcons/lessInfo.png" id="closeDetail"/>
-                </div>-->
-                <div id="poiDetailContent">
-                    <div id="poiName"></div>
-                    <!--                    <input type="button" id="addPoiToRoute" value="Legg til i rute" />-->
-                    <div id="addPoiToRouteForm" class="hidden padding translate">
-                        <input type="text" id="newRouteName" />
-                        <input type="button" value="$T[Create]" id="createNewRouteBtn" />
-                        <ul id="listExistingRoutes"></ul>
-                    </div>
-                </div>
-                <div id="poiCategory"></div>
-                <div id="poiImage" class="hidden">
-                    <img src="" id="poiThumbnail" />
-                </div>
-                <div id="poiVideo" class="hidden">
-                    <!--                    <video width="320" height="240" id="videoElement" controls="controls">
-                                                <source src="" id="videoSource" type="video/mp4" />
-                                            </video>-->
-                    <video id="videoElement" class="video-js vjs-default-skin">
-                    </video>
-                </div>
-                <div id="poiAudio" class="hidden">
-                </div>
-                <div id="poiIngress" class="padding"></div>
-
-                <div id="detailAccordion" class="padding ui-accordion">
-                    <h3 class="ui-accordion-header translate">$T[Description]</h3>
-                    <div id="poiDescription" class="ui-accordion-content"></div>
-                    <h3 class="ui-accordion-header translate">$T[More information]</h3>
-                    <div id="poiAboutData" class="ui-accordion-content"></div>
-                </div>
-                </>
-            </div>
         </div>
     </div>
     <div id="footerSection" class="footerSection">

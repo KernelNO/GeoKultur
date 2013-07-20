@@ -33,7 +33,12 @@ module App
 
         public numSearchProviders: number = 3;
         public digitakArkivetPropertyCategory:string = "Historie og samfunn";
-        
+
+
+        public templatePOIDetailsView: string = "Views/POIDetails.html";
+        public templateAboutView: string = "Views/About.html";
+        public templatePOIPreview: string = "POIPreview.html";
+		
         // For local debugging
         public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
         public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";

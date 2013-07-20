@@ -48,8 +48,18 @@ module System.Providers {
             ret = translater.translateSubString(ret);
 
             if (replacement) {
-                ret = ret.replace(/\$E\[([^\]]+)\]/gm, function (fullMatch, match, offset) {
-                    return replacement[match];
+                ret = ret.replace(/\$\[([^\]]+)\]/gm, function (fullMatch, match, offset) {
+                    var r = replacement[match];
+                    // If it is a method, execute it
+                    if (typeof r === "function")
+                        r = (<any>r)();
+                    return r;
+                });
+                ret = ret.replace(/\$IF([\s\S]*?)\$ENDIF/gm, function (fullMatch, match, offset) {
+                    var v = match.replace(/^\(([^\)]+)\).*/, "$1");
+                    if (replacement[v])
+                        return match.replace(/^\([^\)]+\)(.*)/, "$1");
+                    return "";
                 });
             }
             log.debug("TemplateProvider", "Returning template: " + name);
@@ -60,7 +70,7 @@ module System.Providers {
 }
 var templateProvider = new System.Providers.TemplateProvider();
 startup.addPostInit(function () {
-    templateProvider.queueTemplateDownload("TestTemplate.html");
+    //templateProvider.queueTemplateDownload("TestTemplate.html");
     //var keys: { [name: string]: string; } = {};
     //keys["Key1"] = "ReplacementKey1";
     //keys["Key2"] = "ReplacementKey2";
