@@ -1,290 +1,296 @@
 
-# /KNappen_src/
-/KNappen_src/*.suo
+# /GeoKultur_src/
+/GeoKultur_src/*.suo
 
-# /KNappen_src/KNappen/
-/KNappen_src/KNappen/*.suo
-/KNappen_src/KNappen/packages
+# /GeoKultur_src/GeoKultur/
+/GeoKultur_src/GeoKultur/*.suo
+/GeoKultur_src/GeoKultur/packages
 
-# /KNappen_src/KNappen/KNappen.KNappenService/
-/KNappen_src/KNappen/KNappen.KNappenService/[Bb]in
-/KNappen_src/KNappen/KNappen.KNappenService/obj
-/KNappen_src/KNappen/KNappen.KNappenService/[Dd]ebug
-/KNappen_src/KNappen/KNappen.KNappenService/[Rr]elease
-/KNappen_src/KNappen/KNappen.KNappenService/*.user
-/KNappen_src/KNappen/KNappen.KNappenService/*.aps
-/KNappen_src/KNappen/KNappen.KNappenService/*.eto
-/KNappen_src/KNappen/KNappen.KNappenService/ClientBin
-/KNappen_src/KNappen/KNappen.KNappenService/GeneratedArtifacts
-/KNappen_src/KNappen/KNappen.KNappenService/_Pvt_Extensions
+# /GeoKultur_src/GeoKultur/KNappen.KNappenService/
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/[Bb]in
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/obj
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/[Dd]ebug
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/[Rr]elease
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/*.user
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/*.aps
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/*.eto
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/ClientBin
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/GeneratedArtifacts
+/GeoKultur_src/GeoKultur/KNappen.KNappenService/_Pvt_Extensions
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/
-/KNappen_src/KNappen/KNappen.MobileSPA/bin
-/KNappen_src/KNappen/KNappen.MobileSPA/*.user
-/KNappen_src/KNappen/KNappen.MobileSPA/obj
-/KNappen_src/KNappen/KNappen.MobileSPA/Copy of TestDoc.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/Copy of TestDoc.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/Copy of TestDoc.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/bin
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/*.user
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/obj
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/Copy of TestDoc.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/Copy of TestDoc.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/Copy of TestDoc.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/App/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/AppConfig.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/_References.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/AppConfig.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/_References.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/AppConfig.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/_References.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Config.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Config.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Config.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Settings.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Settings.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Settings.js.map
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/AppConfig.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/_References.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/AppConfig.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/_References.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/AppConfig.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/_References.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Config.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Config.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Config.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Settings.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Settings.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Settings.js.map
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/MapController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/MapController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/MapController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SearchController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SearchController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SearchController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ResultListController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ResultListController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ResultListController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/PoiController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/PoiController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/PoiController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ARController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ARController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ARController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/UserPopupController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/UserPopupController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/UserPopupController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SettingsController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SettingsController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SettingsController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/testdocagain.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/testdocagain.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/testdocagain.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/RouteController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/RouteController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/RouteController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/FeedbackController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/FeedbackController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/FeedbackController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/GoogleAnalyticsController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/GoogleAnalyticsController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/GoogleAnalyticsController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/ResultListController.min.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SearchViewController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SearchViewController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/SearchViewController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/AudioController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/AudioController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/AudioController.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/MapController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/MapController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/MapController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SearchController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SearchController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SearchController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ResultListController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ResultListController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ResultListController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/PoiController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/PoiController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/PoiController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ARController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ARController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ARController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/UserPopupController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/UserPopupController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/UserPopupController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SettingsController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SettingsController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SettingsController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/testdocagain.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/testdocagain.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/testdocagain.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/RouteController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/RouteController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/RouteController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/FeedbackController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/FeedbackController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/FeedbackController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/GoogleAnalyticsController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/GoogleAnalyticsController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/GoogleAnalyticsController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/ResultListController.min.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SearchViewController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SearchViewController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/SearchViewController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/AudioController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/AudioController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/AudioController.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/App/GUI/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/GUI/PoiDialog.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/GUI/PoiDialog.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/GUI/PoiDialog.js.map
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/GUI/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/GUI/PoiDialog.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/GUI/PoiDialog.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/GUI/PoiDialog.js.map
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/PointOfInterest.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/PointOfInterest.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/PointOfInterest.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchCriteria.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchResult.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchResult.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchResult.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchCriteria.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchCriteria.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchCriteriaEnums.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchCriteriaEnums.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SearchCriteriaEnums.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SettingsEnums.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SettingsEnums.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SettingsEnums.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Models/SettingsEnums.min.js.map
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/PointOfInterest.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/PointOfInterest.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/PointOfInterest.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchCriteria.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchResult.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchResult.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchResult.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchCriteria.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchCriteria.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchCriteriaEnums.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchCriteriaEnums.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SearchCriteriaEnums.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SettingsEnums.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SettingsEnums.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SettingsEnums.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Models/SettingsEnums.min.js.map
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/SearchProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/SearchProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/SearchProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/ISearchProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/ISearchProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/ISearchProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/MapProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/MapProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/MapProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/TranslationProviderNB.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/TranslationProviderNB.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/TranslationProviderNB.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/MultiViewBindingProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/MultiViewBindingProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/MultiViewBindingProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/RouteProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/RouteProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/RouteProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/PointOfInterestTypeProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/PointOfInterestTypeProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/PointOfInterestTypeProvider.min.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/SearchProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/SearchProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/SearchProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/ISearchProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/ISearchProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/ISearchProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/MapProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/MapProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/MapProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderNB.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderNB.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderNB.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/MultiViewBindingProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/MultiViewBindingProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/MultiViewBindingProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/RouteProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/RouteProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/RouteProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/PointOfInterestTypeProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/PointOfInterestTypeProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/PointOfInterestTypeProvider.min.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceNorvegiana.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceNorvegiana.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceNorvegiana.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceInstagram.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceInstagram.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceInstagram.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceDigitalarkivetProperty.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceDigitalarkivetProperty.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceDigitalarkivetProperty.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceWikiLocation.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceWikiLocation.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceWikiLocation.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/SSRSearch.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/SSRSearch.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/SearchProviders/SSRSearch.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceNorvegiana.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceNorvegiana.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceNorvegiana.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceInstagram.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceInstagram.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceInstagram.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceDigitalarkivetProperty.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceDigitalarkivetProperty.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceDigitalarkivetProperty.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceWikiLocation.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceWikiLocation.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/DataSourceWikiLocation.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/SSRSearch.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/SSRSearch.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/SearchProviders/SSRSearch.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/System/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Startup.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Config.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Startup.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Startup.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Config.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Config.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/ConfigBase.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/ConfigBase.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/ConfigBase.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/_References.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/_References.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/_References.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Startup.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Config.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Startup.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Startup.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Config.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Config.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/ConfigBase.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/ConfigBase.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/ConfigBase.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/_References.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/_References.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/_References.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/Log.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/Log.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/Log.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.min.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.min.js.map
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/Log.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/Log.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/Log.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalytics.min.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Diagnostics/GoogleAnalyticsManager.min.js.map
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/System/GUI/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/GUI/ViewController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/GUI/ViewController.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/GUI/ViewController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/GUI/ViewController.min.js.map
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/GUI/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/GUI/ViewController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/GUI/ViewController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/GUI/ViewController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/GUI/ViewController.min.js.map
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/PointOfInterestBase.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/PointOfInterestBase.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/PointOfInterestBase.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/Position.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/Position.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Models/Position.min.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/PointOfInterestBase.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/PointOfInterestBase.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/PointOfInterestBase.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/Position.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/Position.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Models/Position.min.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/GoogleAnalyticsProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/GoogleAnalyticsProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/GoogleAnalyticsProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/GpsProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/GpsProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/GpsProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/Serializer.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/Serializer.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/Serializer.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/ARProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/ARProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/ARProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/WikitudeProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/WikitudeProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/WikitudeProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/HttpDownloadProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/HttpDownloadProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/HttpDownloadProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/PhoneGapProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/PhoneGapProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/PhoneGapProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/StorageProviders.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/StorageProviders.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/StorageProviders.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/StorageProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/StorageProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/StorageProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/AudioProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/AudioProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/AudioProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapStorageProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapStorageProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapStorageProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.min.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapCacheProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapCacheProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/MapCacheProvider.min.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/GoogleAnalyticsProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/GoogleAnalyticsProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/GoogleAnalyticsProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/GpsProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/GpsProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/GpsProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/Serializer.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/Serializer.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/Serializer.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/ARProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/ARProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/ARProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/WikitudeProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/WikitudeProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/WikitudeProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/HttpDownloadProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/HttpDownloadProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/HttpDownloadProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/PhoneGapProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/PhoneGapProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/PhoneGapProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/StorageProviders.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/StorageProviders.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/StorageProviders.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/StorageProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/StorageProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/StorageProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/AudioProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/AudioProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/AudioProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapStorageProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapStorageProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapStorageProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.min.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapPreCacheProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapCacheProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapCacheProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/MapCacheProvider.min.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/ErrorTool.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/ErrorTool.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/ErrorTool.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Language.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Language.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Language.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Translater.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Translater.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Translater.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/StringUtils.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/StringUtils.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/StringUtils.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Serializer.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Serializer.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Utils/Serializer.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/ErrorTool.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/ErrorTool.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/ErrorTool.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Language.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Language.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Language.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Translater.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Translater.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Translater.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/StringUtils.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/StringUtils.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/StringUtils.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Serializer.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Serializer.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Utils/Serializer.js
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/PhoneGap/
-/KNappen_src/KNappen/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.js
-/KNappen_src/KNappen/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.min.js.map
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/PhoneGap/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/PhoneGap/PhoneGapInterop.min.js.map
 
-# /KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/UnitTester.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/UnitTester.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/UnitTester.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/IUnitTest.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/IUnitTest.min.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/IUnitTest.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.min.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/HttpDownloadProviderTest.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/HttpDownloadProviderTest.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/UnitTests/HttpDownloadProviderTest.js
+# /GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/UnitTester.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/UnitTester.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/UnitTester.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/IUnitTest.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/IUnitTest.min.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/IUnitTest.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/DataSourceNorvegianaTest.min.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/HttpDownloadProviderTest.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/HttpDownloadProviderTest.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/UnitTests/HttpDownloadProviderTest.js
 
-# /PhoneGap/Android/KNappen/
+# /PhoneGap/Android/GeoKultur/
+/PhoneGap/Android/GeoKultur/.settings
+/PhoneGap/Android/GeoKultur/.classpath
+/PhoneGap/Android/GeoKultur/.project
+/PhoneGap/Android/GeoKultur/gen
 /PhoneGap/Android/KNappen/.settings
 /PhoneGap/Android/KNappen/.classpath
 /PhoneGap/Android/KNappen/.project
 /PhoneGap/Android/KNappen/gen
 
-# /PhoneGap/Android/KNappen/bin/
+# /PhoneGap/Android/GeoKultur/bin/
+/PhoneGap/Android/GeoKultur/bin/*
 /PhoneGap/Android/KNappen/bin/*
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.min.js.map
 
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/WindowSizeController.js.map
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/WindowSizeController.min.js
-/KNappen_src/KNappen/KNappen.MobileSPA/JS/App/Controllers/WindowSizeController.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/System/Providers/TemplateProvider.min.js.map
+
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/WindowSizeController.js.map
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/WindowSizeController.min.js
+/GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Controllers/WindowSizeController.js
