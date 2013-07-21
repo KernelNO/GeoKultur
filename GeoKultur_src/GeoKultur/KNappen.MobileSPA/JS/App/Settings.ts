@@ -48,6 +48,7 @@ module App {
                 //{ id: "GooglePhysical", name: "Google Physical" },
                 //{ id: "GoogleHybrid", name: "Google Hybrid" },
                 //{ id: "GoogleSatellite", name: "Google Satellite" },
+                { id: "OSM", name: "OpenStreetMap" },
                 { id: "WMS:std0:norges_grunnkart", name: "Norges grunnkart" },
                 { id: "WMS:std0:topo2", name: "Topologisk" },
                 { id: "BingRoad", name: "Bing Road" },

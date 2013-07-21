@@ -164,6 +164,8 @@ module System.Providers {
 
 
 
+            if (mapType == "OSM")
+                return new OpenLayers.Layer.OSM("OpenStreetMap");;
             if (mapType == "GoogleStreets")
                 return new OpenLayers.Layer.Google("Google Streets");
             if (mapType == "GooglePhysical")
