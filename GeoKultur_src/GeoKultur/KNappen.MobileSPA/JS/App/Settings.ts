@@ -18,7 +18,7 @@ module App {
         public startSearchCategory: KnockoutObservableString = ko.observable('*');
         public startSearchDistance: KnockoutObservableNumber = ko.observable(1);
         //public startMapType: KnockoutObservableString = ko.observable('WMS:std0:norges_grunnkart');
-        public startMapType: KnockoutObservableString = ko.observable('Google');
+        public startMapType: KnockoutObservableString = ko.observable('WMS:std0:norges_grunnkart');
         public startMapZoomLevel: KnockoutObservableNumber = ko.observable(14);
         public startResultAmount: KnockoutObservableNumber = ko.observable(30);
         public startView: KnockoutObservableString = ko.observable('homeView');
