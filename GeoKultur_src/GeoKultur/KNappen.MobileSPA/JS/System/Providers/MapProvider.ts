@@ -173,11 +173,11 @@ module System.Providers {
             if (mapType == "GoogleSatellite")
                 return new OpenLayers.Layer.Google("Google Satellite", { type: google.maps.MapTypeId.SATELLITE });
             if (mapType == "BingRoad")
-                return new OpenLayers.Layer.Bing({ name: "Bing Road", key: config.mapBingAPIKey, type: "Road" });
+                return new OpenLayers.Layer.Bing({name: "Road", key: config.mapBingAPIKey, type: "Road" });
             if (mapType == "BingHybrid")
-                return new OpenLayers.Layer.Bing({ name: "Bing Hybrid", key: config.mapBingAPIKey, type: "AerialWithLabels" });
+                return new OpenLayers.Layer.Bing({name: "Hybrid", key: config.mapBingAPIKey, type: "AerialWithLabels" });
             if (mapType == "BingAerial")
-                return new OpenLayers.Layer.Bing({ name: "Bing Aerial", key: config.mapBingAPIKey, type: "Aerial" });
+                return new OpenLayers.Layer.Bing({name: "Aerial", key: config.mapBingAPIKey, type: "Aerial" });
 
             if (mapType == "WMS") {
                 return new OpenLayers.Layer.WMS("OpenLayers WMS",
