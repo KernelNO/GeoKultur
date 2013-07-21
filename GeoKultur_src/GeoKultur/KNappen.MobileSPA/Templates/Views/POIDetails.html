@@ -19,15 +19,17 @@
             $IF(tags)<b>$T[Subjects]:</b> $[tags]<br />$ENDIF
             $IF(year)<b>$T[Dating]:</b> $[year]<br />$ENDIF
             $IF(owner)<b>$T[Source]:</b> $[owner]<br />$ENDIF
-            $IF(institution)<b>Institusjon:</b> $[institution]<br />$ENDIF
+            $IF(institution)<b>$T[Institution]:</b> $[institution]<br />$ENDIF
             $IF(originalVersion)<b>$T[Original version]:</b> $[originalVersion]<br/>$ENDIF
             $IF(creator)<b>$T[Creator]:</b> $[creator]<br/>$ENDIF
-            $IF(license)<b>$T[License]:</b>$[license]<br/>$ENDIF
+            $IF(license)<b>$T[License]:</b>$[license]<br/>$ENDIF          
+        </div>
+        <h3 class="ui-accordion-header translate">$T[Related links]</h3>
+        <div id="poiLinksData" class="ui-accordion-content">
             <b>$T[External links]:</b>
             $IF(linkMoreInfo)<a href='$[linkMoreInfo]'>$[linkMoreInfo]</a><br/>$ENDIF
             $IF(landingPage)<a href='$[landingPage]'>$[landingPage]</a><br/>$ENDIF
             $IF(link)<a href='$[link]'>$[link]</a><br/>$ENDIF
-                        
         </div>
     </div>
     </>
