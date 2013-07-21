@@ -661,6 +661,9 @@
     <Content Include="JS\App\SearchProviders\DataSourceEuropeana.js">
       <DependentUpon>DataSourceEuropeana.ts</DependentUpon>
     </Content>
+    <Content Include="JS\App\SearchProviders\DataSourceEuropeana.min.js">
+      <DependentUpon>DataSourceEuropeana.ts</DependentUpon>
+    </Content>
     <Content Include="JS\System\Providers\MapCacheProvider.js">
       <DependentUpon>MapCacheProvider.ts</DependentUpon>
     </Content>

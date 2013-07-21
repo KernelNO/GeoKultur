@@ -33,3 +33,34 @@
 .plainlist{
     list-style:none;
 }
+
+@media only screen and (max-width: 320px){
+
+    .divMenuButtons h2{
+    width:70%;
+    margin: auto;
+    float: left;
+    padding-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    /*font-size: 30px;
+    margin-top: 40px;*/
+	font-size: 170%;
+	margin-top: 1.5em;
+    font-weight:normal;
+
+}
+.divMenuButtons img{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    max-height:100px;
+    width: 20%;
+}
+
+.divMenuButtons{
+    width: 95%;
+    height: 90px;
+    margin-bottom: 3px;
+    /*border-bottom: 1px solid #343434;*/
+}
+}
