@@ -206,14 +206,14 @@
 
 
         startup.addPreInit(function () {
-            viewController.addPostSelectEvent(function(event, oldView, newView) {
+            viewController.addPostSelectEvent(function (event, oldView, newView) {
                 if (newView.name == "homeView") windowSizeController.HideTopMenu();
                 if (newView.name != "homeView") windowSizeController.ShowTopMenu();
             });
         });
 
         startup.addInit(function () {
-            
+
 
             // Set to default startup view only if we don't have a valid URL
             if (!viewController.processUrl())
@@ -253,6 +253,49 @@
     <div id="headerSectionSize"></div>
     <div id="mainSection" class="mainSection">
 
+        <div id="homeView" class="contentPage">
+            <div class="width:100%; height:100%;">
+                <img src="Content/images/AppIcons/GeoKulturLogo.png" style="width: 90%; max-width: 600px" class="middle" />
+                <ul class="plainlist">
+                    <li>
+                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('searchView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/Search.png" />
+                            <h2 class="translate">$T[Search]</h2>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/AR.png" />
+                            <h2 class="translate">$T[Augmented Reality]</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('mapView'); return false;">
+                            <img class="middle" src="GeoKultur/Images/Ikoner/POI.png" />
+                            <h2 class="translate">$T[Map]</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('listView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/List.png" />
+                            <h2 class="translate">$T[List]</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('settingsView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/Settings.png" />
+                            <h2 class="translate">$T[Settings]</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('aboutView'); return false;">
+                            <img src="GeoKultur/Images/Ikoner/About.png" />
+                            <h2 class="translate">$T[About]</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div id="listView" class="contentPage">
             <!-- Fill this with data from Norvegiana in this format: <h3><div> -->
             <div id="listCount" class="resultListCentered">
