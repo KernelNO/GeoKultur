@@ -31,8 +31,6 @@ module System {
 
         public mapBingAPIKey: string = "Aqwk9GZCE_k1zGTNgB-kuJcOveS5XDuomQGHq0I3MlQ0pzKPvsCedExHbXZ76L31";
 
-        public mapBingAPIKey: string = "XXX";
-
         public wikitudeAddPoiDelayMs: number = 500;
 
         public openLayersMapUrl: { [key: string]: string; } = {};
