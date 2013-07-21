@@ -125,7 +125,7 @@ module App.Controllers {
             var keys = this.getReplacementKeys(poi);
 
             viewController.selectView("poiView");
-            
+
             var str = templateProvider.getTemplate(config.templatePOIDetailsView, keys);
             var poiView = $("#poiView");
             poiView.html(str);
@@ -164,7 +164,7 @@ module App.Controllers {
             $("#closePreviewBtn").mousedown(function () {
                 viewController.selectView(viewController.getOldView().name);
             });
-            //poiView.dialog();
+
 
         }
 
