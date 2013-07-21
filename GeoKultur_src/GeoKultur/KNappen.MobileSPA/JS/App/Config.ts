@@ -42,7 +42,7 @@ module App
         // For local debugging
         public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
         public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";
-        public poiTypeDataUrl: string = "Files/TypeInfo.json";
+        public poiTypeDataUrl: string = "Files/TypeInfo.txt";
         public feedbackUrl: string = "http://localhost:42001/api/Feedback";
         public adminRouteUrl: string = "http://localhost:42001/api/Route";
         public webProxy: string = "http://localhost:42001/WebProxy.aspx?url=";
