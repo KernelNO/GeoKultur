@@ -34,9 +34,6 @@
     list-style:none;
 }
 
-.footerSection{
-    display: none;
-}
 
 @media only screen and (max-width: 450px){
 
@@ -73,7 +70,7 @@
 
     #logoFrame{
         margin: 10px auto auto;
-        max-width: 70%; 
+        max-width: 100%; 
         position: absolute;
         left: 0;
         right: 0;
