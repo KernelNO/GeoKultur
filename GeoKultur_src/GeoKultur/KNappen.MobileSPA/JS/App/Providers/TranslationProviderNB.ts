@@ -100,7 +100,7 @@ module App.Providers {
             translater.addTranslation("Loading", "Laster");
             translater.addTranslation("Buffering...", "Mellomlagrer...");
             translater.addTranslation("Name of new route", "Navn p&aring; ny rute");
-
+            translater.addTranslation("AboutTheData", "Om dataen");
         }
     }
 }

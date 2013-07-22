@@ -1001,6 +1001,9 @@
       <DependentUpon>DataSourceEuropeana.ts</DependentUpon>
     </Content>
     <Content Include="Files\TypeInfo.json" />
+    <Content Include="JS\App\Controllers\MapController.min.js.map">
+      <DependentUpon>MapController.js</DependentUpon>
+    </Content>
     <None Include="Scripts\OpenLayers.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.debug.js_DoNotUse_NotModified" />
     <None Include="Scripts\OpenLayers.light.js_DoNotUse_NotModified" />

@@ -98,7 +98,7 @@ module App.Providers {
             //translater.addTranslation("Error sending feedback", "Feil ved sending av tilbakemelding.");
             //translater.addTranslation("Loading", "Laster");
             //translater.addTranslation("Buffering...", "Mellomlagrer...");
-
+            translater.addTranslation("AboutTheData", "About the data");
         }
     }
 }
