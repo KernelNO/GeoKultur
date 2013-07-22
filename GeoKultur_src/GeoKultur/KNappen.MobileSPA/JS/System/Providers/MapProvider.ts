@@ -141,6 +141,23 @@ module System.Providers {
             this.map.setLayerIndex(this.layerWMS, 1000);
         }
 
+        public showLayer() {
+            if (this.layerWMS) {
+                this.map.removeLayer(this.layerWMS);
+                this.map.addLayer(this.layerWMS);
+                this.map.setLayerIndex(this.layerWMS, 1000);
+            }
+                        
+        }
+        public hideLayer() {
+            if (this.layerWMS) {
+                this.map.removeLayer(this.layerWMS);
+                this.map.addLayer(this.layerWMS);
+                this.map.setLayerIndex(this.layerWMS, 1000);
+            }
+        
+        }
+
         public updateSize() {
             this.map.updateSize();
             return;

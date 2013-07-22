@@ -5,10 +5,8 @@
     App
     @namespace App
 */
-module App
-{
-    export class Config extends System.ConfigBase
-    {
+module App {
+    export class Config extends System.ConfigBase {
         //if user does not have gps pos, start here by default (oslo sentrum)
         public mapStartPos: System.Models.Position = new System.Models.Position(59.9122, 10.7517);
 
@@ -32,13 +30,13 @@ module App
         //public webProxy: string = "http://knappen.konge.net/KNappenService.Prod/WebProxy.aspx?url=";
 
         public numSearchProviders: number = 3;
-        public digitakArkivetPropertyCategory:string = "Historie og samfunn";
+        public digitakArkivetPropertyCategory: string = "Historie og samfunn";
 
 
         public templatePOIDetailsView: string = "Views/POIDetails.html";
         public templateAboutView: string = "Views/About.html";
         public templatePOIPreview: string = "POIPreview.html";
-		
+        
         // For local debugging
         public routeAdminIndexUrl: string = "http://localhost:42001/api/RouteIndex";
         public routeAdminDownloadUrl: string = "http://localhost:42001/api/Route";
@@ -48,9 +46,7 @@ module App
         public webProxy: string = "http://localhost:42001/WebProxy.aspx?url=";
 
         public configInit() {
-            if (navigator.userAgent.match(/(Android)/)) {
-                this.poiTypeDataUrl = "file:///android_asset/world/KNappen/" + this.poiTypeDataUrl;
-            }
+            this.poiTypeDataUrl = phoneGapProvider.fixLocalFileRef(this.poiTypeDataUrl);
         }
     }
 }

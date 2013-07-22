@@ -6,7 +6,7 @@ var WikitudePlugin = {
      *	If you're having a trial version, leave this string empty
      *
      */
-    mySDKKey : "XXXX",
+    mySDKKey : "M8eYFT8fX8lPYlE+Qb92h4CkGUQenEN9Xi09/eB8hRRM48Uwsc2/9K/SN1LiFtEY43sL39zWTHQS3/L1DObNCCjkCV8eqUPVzG6KMxGZurJEpemEV7hnOh6YSku9SfXcrLBGIBcLNep4lq1eA93/DIxNzBpb0L59uLCG3Jwa3hTYWx0ZWRfXwCKYJDsJ/GFGlwywJ/X6wdn8V9E5X8w/INpuzavOyNS0tnOPn7YV3lUcHnOZrjukaY8ceSDQwlr26Tx4/qm0dV9iU0TFs7n/jU/ydqyW/MUldDd8GxDcdICkqIC5Kvt5lqHlggERsygHzjlpxssEiks4Lumq8GziPTexQx0TE7AyRe36NcBhdwiPQJd5YHNW9IN5OTsn54VqGAAmYLFuegk8YVTkta8qIm4HuW0RpkZwRRS6wvDen83oiavFHovvHrOhH4HCmXkGPK0lXo8jAFYi7VQHgiEoUeG/uqiIhe5rmrnhTL/D2Dyg4z5MyzqcMTuqynJPeA7nhQcEK3m14OAmepPPzeQPr7ynyaxs6bOh21SGRvSAbbMp06wCRaZJv/HKBfm6/pJ9KI40Mr8FeoqF0BAKMCXzeiynHOEVUge6iWw7Pns7UXB5slYEqDwf2Zdf1NE7PI1eeSyC1iICtD6BUpDg8DLQz6+ZW82CLXFxrqAaetc=",
 
     /**
      *

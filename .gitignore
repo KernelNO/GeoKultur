@@ -279,9 +279,6 @@
 /PhoneGap/Android/KNappen/.project
 /PhoneGap/Android/KNappen/gen
 
-# /PhoneGap/Android/GeoKultur/bin/
-/PhoneGap/Android/GeoKultur/bin/*
-/PhoneGap/Android/KNappen/bin/*
 
 /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.js.map
 /GeoKultur_src/GeoKultur/KNappen.MobileSPA/JS/App/Providers/TranslationProviderEN.min.js
