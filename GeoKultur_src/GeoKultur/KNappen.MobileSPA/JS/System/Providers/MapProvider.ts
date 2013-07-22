@@ -142,7 +142,10 @@ module System.Providers {
         }
 
         public updateSize() {
+            this.map.updateSize();
+            return;
             if (this.layerWMS) {
+                
                 this.map.removeLayer(this.layerWMS);
                 this.map.addLayer(this.layerWMS);
                 this.map.setLayerIndex(this.layerWMS, 1000);

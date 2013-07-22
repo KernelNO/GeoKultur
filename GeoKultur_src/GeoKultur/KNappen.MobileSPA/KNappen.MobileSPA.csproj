@@ -49,9 +49,6 @@
     <Content Include="Content\images\AppIcons\defaultPoiIcon.png" />
     <Content Include="Content\images\AppIcons\GeoKulturLogo.png" />
     <Content Include="Content\images\AppIcons\search.png" />
-    <Content Include="Content\images\Categories\defaultCategory.png" />
-    <Content Include="Content\images\Categories\wikipedia.png" />
-    <Content Include="Content\images\MenuImages\feedback.png" />
     <Content Include="Content\swf\soundmanager2.swf" />
     <Content Include="Content\swf\soundmanager2_debug.swf" />
     <Content Include="Content\swf\soundmanager2_flash9.swf" />
@@ -64,37 +61,6 @@
     <Content Include="Content\images\AppIcons\lessInfo.png" />
     <Content Include="Content\images\AppIcons\moreInfo.png" />
     <Content Include="Content\images\AppIcons\showDetail.png" />
-    <Content Include="Content\images\Categories\arkeologi.png" />
-    <Content Include="Content\images\Categories\arkitektur.png" />
-    <Content Include="Content\images\Categories\dyr.png" />
-    <Content Include="Content\images\Categories\fugler.png" />
-    <Content Include="Content\images\Categories\historieogsamfunn.png" />
-    <Content Include="Content\images\Categories\kulturminne.png" />
-    <Content Include="Content\images\Categories\kunst.png" />
-    <Content Include="Content\images\Categories\planter.png" />
-    <Content Include="Content\images\Categories\stedsnavn.png" />
-    <Content Include="Content\images\Categories\verneomrader.png" />
-    <Content Include="Content\images\Genres\fagdata.png" />
-    <Content Include="Content\images\Genres\fortelling.png" />
-    <Content Include="Content\images\Genres\leksikon.png" />
-    <Content Include="Content\images\MediaTypes\aboutMedia.png" />
-    <Content Include="Content\images\MediaTypes\image.png" />
-    <Content Include="Content\images\MediaTypes\more.png" />
-    <Content Include="Content\images\MediaTypes\sound.png" />
-    <Content Include="Content\images\MediaTypes\text.png" />
-    <Content Include="Content\images\MediaTypes\video.png" />
-    <Content Include="Content\images\MediaTypes\video_Play.png" />
-    <Content Include="Content\images\MenuImages\about.png" />
-    <Content Include="Content\images\MenuImages\ar.png" />
-    <Content Include="Content\images\MenuImages\list.png" />
-    <Content Include="Content\images\MenuImages\mapIcon.png" />
-    <Content Include="Content\images\MenuImages\menu_Active.png" />
-    <Content Include="Content\images\MenuImages\menu_Inactive.png" />
-    <Content Include="Content\images\MenuImages\routes.png" />
-    <Content Include="Content\images\MenuImages\search.png" />
-    <Content Include="Content\images\MenuImages\settings.png" />
-    <Content Include="Content\images\MenuImages\slider_menu.png" />
-    <Content Include="Content\images\topLogo.png" />
     <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ajax-loader.gif" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
@@ -1420,7 +1386,12 @@
     </Content>
     <Content Include="Scripts\jquery-2.0.0.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\images\Categories\" />
+    <Folder Include="Content\images\Genres\" />
+    <Folder Include="Content\images\MediaTypes\" />
+    <Folder Include="Content\images\MenuImages\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

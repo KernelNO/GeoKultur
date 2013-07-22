@@ -56,7 +56,7 @@ module System.Models {
             @public
             @type {KnockoutObservableString}
         */
-        public iconMediaTypeURL: KnockoutObservableString = ko.observable("Content/images/MediaTypes/text.png");
+        public iconMediaTypeURL: KnockoutObservableString = ko.observable("GeoKultur/Images/MapIcons/Media/text.png");
 
         /**
             iconCategoryURL
@@ -64,7 +64,7 @@ module System.Models {
             @public
             @type {KnockoutObservableString}
         */
-        public iconCategoryURL: KnockoutObservableString = ko.observable("Content/images/Categories/defaultCategory.png");
+        public iconCategoryURL: KnockoutObservableString = ko.observable("GeoKultur/Images/MapIcons/Tourism/sight-2.png");
         
         /**
             iconGenreURL
@@ -72,7 +72,7 @@ module System.Models {
             @public
             @type {KnockoutObservableString}
         */
-        public iconGenreURL: KnockoutObservableString = ko.observable("Content/images/AppIcons/defaultPoiIcon.png");
+        public iconGenreURL: KnockoutObservableString = ko.observable("GeoKultur/Images/MapIcons/Tourism/sight-2.png");
         /**
             iconWidth
             @member System.Models.PointOfInterestBase#iconWidth
