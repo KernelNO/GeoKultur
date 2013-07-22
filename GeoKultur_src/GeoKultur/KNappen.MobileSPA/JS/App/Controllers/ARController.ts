@@ -65,7 +65,7 @@ module App.Controllers {
                     //    preImageUrl = "file:///android_asset/world/KNappen/";
                     //}
 
-                    return '<div class="poi"><img src="' + phoneGapProvider.fixLocalFileRef(poi.iconCategoryURL()) + '"/></div>';
+                    return '<div class="poi"><img src="' + config.fixLocalFileRef(poi.iconCategoryURL()) + '"/></div>';
                     // Causes annoying IE crash during debugging: onError="$(this).unbind("error").attr("src", "Images/Icon-Large.gif");"
                 }
             );

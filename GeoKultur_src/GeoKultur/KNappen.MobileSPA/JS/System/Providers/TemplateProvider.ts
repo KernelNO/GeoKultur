@@ -11,7 +11,10 @@ module System.Providers {
         public queueTemplateDownload(name: string, doneCallback: { (data: string): void; } = null, failCallback: { (message: string): void; } = null, alwaysCallback: { (): void; } = null) {
             log.debug("TemplateProvider", "Queued template for download: " + name);
             var _this = this;
-            var fullName = config.TemplateProviderFolder + "/" + name;
+            var fullName = config.TemplateProviderFolder;
+            if (!stringUtils.endsWith(fullName, "/"))
+                fullName += "/";
+            fullName += name.replace(/\/\//g, "/");
             var item = new System.Providers.HttpDownloadItem(name,
                 fullName,
                 function _doneCallback(data: string) {

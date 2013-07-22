@@ -20,7 +20,7 @@ module App {
         public searchTimeoutSeconds: number = 30;
         public norvegianaURL: string = 'http://kn-reise.delving.org/organizations/kn-reise/api/search?query=';
         public ssrURL: string = 'https://ws.geonorge.no/SKWS3Index/ssr/sok';
-
+         
         // For "prod"
         //public routeAdminIndexUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/RouteIndex";
         //public routeAdminDownloadUrl: string = "http://knappen.konge.net/KNappenService.Prod/api/Route";
@@ -45,9 +45,11 @@ module App {
         public adminRouteUrl: string = "http://localhost:42001/api/Route";
         public webProxy: string = "http://localhost:42001/WebProxy.aspx?url=";
 
-        public configInit() {
-            this.poiTypeDataUrl = phoneGapProvider.fixLocalFileRef(this.poiTypeDataUrl);
+        public configInit() {  
+            this.poiTypeDataUrl = this.fixLocalFileRef(this.poiTypeDataUrl);
+        
         }
+
     }
 }
 var config = new App.Config();
