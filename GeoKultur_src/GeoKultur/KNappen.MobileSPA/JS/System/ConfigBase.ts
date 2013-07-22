@@ -56,9 +56,8 @@ module System {
          * @classdesc Contains base config (available to System namespace). Inherited by App.Config.
          */
         constructor() {            
-            if (navigator.userAgent.match(/(Android)/)) {
-                this.TemplateProviderFolder = "file:///android_asset/world/KNappen/" + this.TemplateProviderFolder;
-            }
+            this.TemplateProviderFolder = phoneGapProvider.fixLocalFileRef(this.TemplateProviderFolder);
+            
 
             if (navigator.userAgent.match(/(Android)/)) {
                 this.TemplateProviderFolder = "file:///android_asset/world/KNappen/" + this.TemplateProviderFolder;
