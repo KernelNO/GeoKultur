@@ -131,6 +131,8 @@ module App.Controllers {
             poiView.html(str);
             phoneGapProvider.fixALinksIfPhoneGap(poiView);
 
+            //templateProvider.touchScroll("poiDetail"); 
+
             //check mediatypes of POI to show the appropriate viewers
             $.each(poi.mediaTypes(), function (k, v: string) {
                 v = v.toUpperCase();
@@ -143,11 +145,11 @@ module App.Controllers {
                     _this.showAudio(poi.name()[0], poi.soundUri()[0]);
             });
 
-            var detailAccordion = $("#detailAccordion");
-            detailAccordion.accordion({ active: false, collapsible: false });
-            ////Todo: fix this later
-            //detailAccordion.accordion("option", "icons", { 'header': 'showMoreAccordion', 'activeHeader': 'showLessAccordion' });
-            $('#detailAccordion .ui-accordion-content').show();
+            //var detailAccordion = $("#detailAccordion");
+            //detailAccordion.accordion({ active: false, collapsible: false });
+            //////Todo: fix this later
+            ////detailAccordion.accordion("option", "icons", { 'header': 'showMoreAccordion', 'activeHeader': 'showLessAccordion' });
+            //$('#detailAccordion .ui-accordion-content').show();
 
             //$("#addPoiToRoute").mousedown(function () {
             //    routeController.openRouteList(poi);

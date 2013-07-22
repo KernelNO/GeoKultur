@@ -182,10 +182,10 @@ input[type=text]{
     background-color: white !important;
     z-index: 999999;
     width: 100%;
-    border-bottom: 1px solid #3eaebe;
-    position: absolute;
+    border-bottom: 1px solid #E2FFD8;
+    position: fixed;
     bottom: 0;
-    max-height: 95px;
+    height: 95px;
 }
 
 #poiPreview h2{
@@ -195,7 +195,7 @@ input[type=text]{
 .poiPreviewActiveDetail{
     top: 76px!important;
     bottom: auto!important;
-    border: 1px thin rgb(231, 245, 247)!important;
+    border: 1px thin #E2FFD8!important;
     border-bottom: none;
 }
 
@@ -235,10 +235,11 @@ input[type=text]{
     padding: 5px;
     letter-spacing: -0.03em;
     width: 100%;
+    display: inline-block;
 }
 
 #poiImage{
-    width: 95%;
+
 }
 
 #poiImage img{

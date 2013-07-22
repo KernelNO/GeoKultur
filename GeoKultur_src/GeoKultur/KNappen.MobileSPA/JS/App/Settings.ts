@@ -62,18 +62,18 @@ module App {
 
             this.mapZoomLevels = ko.observableArray(
                 [
-                { id: 7, name: "7 (land)" },
+                { id: 7, name: "7 (country)" },
                 { id: 8, name: "8" },
                 { id: 9, name: "9" },
-                { id: 10, name: "10 (fylke)" },
+                { id: 10, name: "10 (county)" },
                 { id: 11, name: "11" },
                 { id: 12, name: "12" },
-                { id: 13, name: "13 (by)" },
+                { id: 13, name: "13 (city)" },
                 { id: 14, name: "14" },
-                { id: 15, name: "15 (bydel)" },
+                { id: 15, name: "15" },
                 { id: 15, name: "16" },
                 { id: 15, name: "17" },
-                { id: 15, name: "18 (gate)" }
+                { id: 15, name: "18 (street)" }
                 ]);
 
             this.searchDistances = ko.observableArray([
@@ -106,8 +106,8 @@ module App {
             //Removed this because of a bug we didn't have time to fix
             //{ id: "arView", name: "Utvidet virkelighet" }
             this.views = ko.observableArray([
-                { id: "mapView", name: "Kart" },
-                { id: "listView", name: "Søkeresultat" },
+                { id: "mapView", name: "Map" },
+                { id: "listView", name: "Search Result" },
             ]);
 
 

@@ -21,9 +21,9 @@
     ],
     "medias": [
 		{ "text": "Video",              "type": "VIDEO",                            "icon": "GeoKultur/Images/MapIcons/Media/video.png" },
-        { "text": "Lyd",                "type": "SOUND",                            "icon": "GeoKultur/Images/MapIcons/Media/audio.png" }, 
-        { "text": "Bilde",              "type": "IMAGE",                            "icon": "GeoKultur/Images/MapIcons/Media/photo.png" },
-        { "text": "Tekst",              "type": "TEXT",                             "icon": "GeoKultur/Images/MapIcons/Media/text.png" },
-		{ "text": "Kombinasjon",        "type": "*",                                "icon": "GeoKultur/Images/MapIcons/Media/text.png" }
+        { "text": "Sound",                "type": "SOUND",                            "icon": "GeoKultur/Images/MapIcons/Media/audio.png" }, 
+        { "text": "Image",              "type": "IMAGE",                            "icon": "GeoKultur/Images/MapIcons/Media/photo.png" },
+        { "text": "Text",              "type": "TEXT",                             "icon": "GeoKultur/Images/MapIcons/Media/text.png" },
+		{ "text": "Combination",        "type": "*",                                "icon": "GeoKultur/Images/MapIcons/Media/text.png" }
     ]
 }

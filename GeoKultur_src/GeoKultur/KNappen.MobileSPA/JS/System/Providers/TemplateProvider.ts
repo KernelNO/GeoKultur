@@ -70,6 +70,32 @@ module System.Providers {
 
             return ret;
         }
+
+    //public isTouchDevice() {
+    //    try {
+    //        document.createEvent("TouchEvent");
+    //        return true;
+    //    } catch (e) {
+    //        return false;
+    //    }
+    //}
+
+    //public touchScroll(id) {
+    //    if (this.isTouchDevice()) { //if touch events exist...
+    //        var el = document.getElementById(id);
+    //        var scrollStartPos = 0;
+
+    //        document.getElementById(id).addEventListener("touchstart", function (event) {
+    //            scrollStartPos = this.scrollTop + this.event.touches[0].pageY;
+    //            event.preventDefault();
+    //        }, false);
+
+    //        document.getElementById(id).addEventListener("touchmove", function (event) {
+    //            this.scrollTop = scrollStartPos - this.event.touches[0].pageY;
+    //            event.preventDefault();
+    //        }, false);
+    //    }
+    //}
     }
 }
 var templateProvider = new System.Providers.TemplateProvider();
