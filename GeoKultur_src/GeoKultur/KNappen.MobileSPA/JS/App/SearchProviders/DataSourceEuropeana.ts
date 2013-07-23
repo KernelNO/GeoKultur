@@ -30,28 +30,28 @@ module App.SearchProviders {
             var _this = this;
 
             inEuropeanaSearch = true;
-            setTimeout(function () {
-                if (inEuropeanaSearch) {
-                    // Handle error accordingly
-                    log.error("DataSourceEuropeana", "Error: Search timeout / error condition.")
-                    log.userPopup(tr.translate("TIMEOUT"), tr.translate("TIMEOUT_NORVEGIANA_SEARCH"));
-                    inEuropeanaSearch = false;
+            //setTimeout(function () {
+            //    if (inEuropeanaSearch) {
+            //        // Handle error accordingly
+            //        log.error("DataSourceEuropeana", "Error: Search timeout / error condition.")
+            //        log.userPopup(tr.translate("TIMEOUT"), tr.translate("TIMEOUT_NORVEGIANA_SEARCH"));
+            //        inEuropeanaSearch = false;
 
-                    // Retry search
-                    autoRetries--;
-                    if (autoRetries > 0) {
-                        setTimeout(function () {
-                            if (!inEuropeanaSearch) {
-                                log.info("DataSourceEuropeana", "Autoretrying search...")
-                                log.userPopup(tr.translate("TIMEOUT"), tr.translate("TIMEOUT_NORVEGIANA_RETRY"));
-                                _this.search(searchCriteria, successCallback, errorCallback);
-                            }
-                        }, config.norvegianaAutoRetryDelaySeconds * 1000);
-                    } else {
-                        autoRetries = config.norvegianaAutoRetryCount;
-                    }
-                }
-            }, config.norvegianaSearchTimeoutSeconds * 1000);
+            //        // Retry search
+            //        autoRetries--;
+            //        if (autoRetries > 0) {
+            //            setTimeout(function () {
+            //                if (!inEuropeanaSearch) {
+            //                    log.info("DataSourceEuropeana", "Autoretrying search...")
+            //                    log.userPopup(tr.translate("TIMEOUT"), tr.translate("TIMEOUT_NORVEGIANA_RETRY"));
+            //                    _this.search(searchCriteria, successCallback, errorCallback);
+            //                }
+            //            }, config.norvegianaAutoRetryDelaySeconds * 1000);
+            //        } else {
+            //            autoRetries = config.norvegianaAutoRetryCount;
+            //        }
+            //    }
+            //}, config.norvegianaSearchTimeoutSeconds * 1000);
 
 
             //var searchUrl = searchCriteria.norvegiana.mkUrl();
