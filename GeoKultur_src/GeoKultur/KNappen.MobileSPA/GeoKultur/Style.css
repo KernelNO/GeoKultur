@@ -1,11 +1,11 @@
 ﻿.divMenuButtons{
-    width: 95%;
+    width: 98%;
     height: 120px;
     margin-bottom: 3px;
     /*border-bottom: 1px solid #343434;*/
 }
 .divMenuButtons h2{
-    width:70%;
+    width:50%;
     margin: auto;
     float: left;
     padding-left: 20px;
@@ -47,51 +47,4 @@
     width:100%;
 }
 
-@media only screen and (max-width: 450px){
 
-    .divMenuButtons h2{
-    width:70%;
-    margin: auto;
-    float: left;
-    padding-left: 20px;
-    font-family: 'Raleway', sans-serif;
-    /*font-size: 30px;
-    margin-top: 40px;*/
-	font-size: 150%;
-	margin-top: 1.5em;
-    font-weight:normal;
-
-}
-.divMenuButtons img{
-    float: left;
-    margin-top: 25px;
-    max-height:100px;
-    width: 15%;
-}
-
-.divMenuButtons{
-    width: 95%;
-    height: 90px;
-    margin-bottom: 3px;
-    /*border-bottom: 1px solid #343434;*/
-}
-}
-
-/* Make headersection fit into screen (so all buttons show) */
-@media only screen and (max-width: 520px) {
-
-    #logoFrame{
-        margin: 10px auto auto;
-        max-width: 100%; 
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-
-    .topMenuImage{
-        height: 52px;
-        padding-left: 2px;
-        width: 52px;
-    }
-
-}
