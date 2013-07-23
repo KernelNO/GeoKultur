@@ -38,6 +38,15 @@
     background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E2FFD8;
 }
 
+.menuButtonWrapper{
+    max-width: 800px;
+    margin: auto;
+}
+
+#imgLogo{
+    width:100%;
+}
+
 @media only screen and (max-width: 450px){
 
     .divMenuButtons h2{
