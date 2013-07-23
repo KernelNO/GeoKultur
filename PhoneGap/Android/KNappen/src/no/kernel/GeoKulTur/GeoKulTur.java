@@ -19,6 +19,8 @@
 
 package no.kernel.GeoKulTur;
 
+import java.io.Console;
+
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebSettings.RenderPriority;
@@ -35,11 +37,21 @@ public class GeoKulTur extends DroidGap
         //super.appView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //super.getSettings().setRenderPriority(RenderPriority.HIGH);
         //webview.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-        super.appView.getSettings().setRenderPriority(RenderPriority.HIGH);
-        super.appView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+
         // Set by <content src="index.html" /> in config.xml
         super.loadUrl(Config.getStartUrl());
         //super.loadUrl("file:///android_asset/www/index.html")
+
+        try {
+        	super.appView.getSettings().setRenderPriority(RenderPriority.HIGH);
+        } catch (Exception e) {
+        	
+        }
+        try {
+        	super.appView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+        } catch (Exception e) {
+        	
+        }
     }
 }
 
