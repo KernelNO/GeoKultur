@@ -144,6 +144,7 @@ module System.GUI {
           */
         public selectView(name: string): System.GUI.ViewControllerItem {
             //location.hash = "#" + name;
+
             var view = this.openView(name);
 
             // Push to history

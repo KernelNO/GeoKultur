@@ -100,6 +100,11 @@ module App.SearchProviders {
                     poi.name(p.title);
                     //todo: abm_introduction is supposed to exist, according to updated documentation in cloudbox
                     poi.description(p.dc_description || "");
+
+                    if (!poi.description()) {
+                        poi.description(p.title || "");
+                    }
+
                     poi.link(p.dc_identifier || "");
                     poi.pos(pos);
                     var thumb = p.edmPreview;
@@ -195,15 +200,15 @@ module App.SearchProviders {
         private searchCriteriaNorgevianaToUrl(searchCriteria: App.Models.SearchCriteria): string {
 
             // qf filter params
-            var qfParams = '';
-            if (searchCriteria.norvegiana_qf() && searchCriteria.norvegiana_qf().length > 0) {
-                $.each(searchCriteria.norvegiana_qf(), function (objid, object) {
-                    if (qfParams != '')
-                        qfParams += ',';
-                    qfParams += 'europeana_dataProvider_facet:' + object;
-                });
-                qfParams = '&qf%5B%5D=' + qfParams;
-            }
+            //var qfParams = '';
+            //if (searchCriteria.norvegiana_qf() && searchCriteria.norvegiana_qf().length > 0) {
+            //    $.each(searchCriteria.norvegiana_qf(), function (objid, object) {
+            //        if (qfParams != '')
+            //            qfParams += ',';
+            //        qfParams += 'europeana_dataProvider_facet:' + object;
+            //    });
+            //    qfParams = '&qf%5B%5D=' + qfParams;
+            //}
 
             // Position
             var posStr = "";
@@ -241,10 +246,10 @@ module App.SearchProviders {
             //if (!sorting)
             //    sorting = "";
 
-            if (searchCriteria.category() && searchCriteria.category() != "*")
-                qfParams += "&qf=abm_category_text:" + searchCriteria.category();
-            if (searchCriteria.mediaType() && searchCriteria.mediaType() != "*")
-                qfParams += "&qf=europeana_type_facet:" + searchCriteria.mediaType();
+            //if (searchCriteria.category() && searchCriteria.category() != "*")
+            //    qfParams += "&qf=abm_category_text:" + searchCriteria.category();
+            //if (searchCriteria.mediaType() && searchCriteria.mediaType() != "*")
+            //    qfParams += "&qf=europeana_type_facet:" + searchCriteria.mediaType();
 
             // Power rangers - Assemble (teh url)!
 
@@ -258,7 +263,7 @@ module App.SearchProviders {
                 + '&start=' + ((searchCriteria.rows() * (searchCriteria.pageNumber() - 1)) + 1)
                 + '&format=json'
                 + sorting
-                + qfParams
+                //+ qfParams
                 + "&profile=standard";
                 //);
             //+ "&sort=geodist()%20asc"

@@ -17,6 +17,11 @@
     font-weight:normal;
 
 }
+
+#logoFrame{
+    
+}
+
 .divMenuButtons img{
     float: left;
     margin-top: 15px;
@@ -24,9 +29,9 @@
     max-height:100px;
 }
 .topMenuImage {
-    height:52px;
-    width:52px;
-    padding-left: 20px;
+    height:60px;
+    width:60px;
+    padding-left: 12px;
 }
 .nobr { white-space:nowrap; }
 
