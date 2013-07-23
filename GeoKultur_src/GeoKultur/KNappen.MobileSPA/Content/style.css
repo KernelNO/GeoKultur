@@ -186,6 +186,12 @@ input[type=text]{
     position: fixed;
     bottom: 0;
     height: 95px;
+    overflow: hidden;
+}
+
+.dialogRecurso{
+    width: 120%;
+    height: 120%;
 }
 
 #poiPreview h2{
@@ -243,7 +249,7 @@ input[type=text]{
 }
 
 #poiImage img{
-    width:100%;
+    max-width:100%;
 }
 
 .poiDetailHeader
