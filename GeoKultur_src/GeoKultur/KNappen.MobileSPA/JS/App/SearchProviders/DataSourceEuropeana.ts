@@ -93,7 +93,7 @@ module App.SearchProviders {
                     }
 
                     // Copy from result to PoI
-                    var poi = new App.Models.PointOfInterest();
+                    var poi = new App.Models.PointOfInterest(); 
                     poi.source("norvegiana");
                     poi.sourceType("fagdata");
                     poi.id(p.guid);

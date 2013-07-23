@@ -132,6 +132,7 @@
     <Content Include="Content\video-js.min.css" />
     <Content Include="Content\video-js.png" />
     <Content Include="Content\video-js.swf" />
+    <Content Include="Files\TypeInfo.txt" />
     <Content Include="GeoKultur\Images\chasingarrows2.gif" />
     <Content Include="GeoKultur\Images\chosen-sprite%402x.png" />
     <Content Include="GeoKultur\Images\chosen-sprite.png" />
