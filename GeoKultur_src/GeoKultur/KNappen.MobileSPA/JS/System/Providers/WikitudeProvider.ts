@@ -169,7 +169,7 @@ module System.Providers {
                 var poiGeoLocation = new AR.GeoLocation(parseFloat(item.pos().lat()), parseFloat(item.pos().lon()));
                 var htmlDrawable = new AR.HtmlDrawable({ html: htmlStr }, 1, {
                     updateRate: AR.HtmlDrawable.UPDATE_RATE.STATIC,
-                    scale: 24,
+                    scale: 6,
                     offsetX: 1,
                     onClick: function () {
                         log.info("WikitudeProvider", "User clicked " + item.id());

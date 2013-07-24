@@ -241,6 +241,19 @@ input[type=text]{
     letter-spacing: -0.03em;
     width: 100%;
     display: inline-block;
+
+    -moz-animation-name:grow;
+  -webkit-animation-name: grow;
+  animation-name: grow;
+ 
+  -moz-animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+ 
+  -moz-animation-direction:normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+
 }
 
 #poiImage{
