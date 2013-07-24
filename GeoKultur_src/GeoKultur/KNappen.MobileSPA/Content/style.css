@@ -232,6 +232,7 @@ input[type=text]{
 {
     background-color: white;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     top: 170px;
     bottom: 2px;
     position: fixed;
