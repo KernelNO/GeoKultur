@@ -360,3 +360,4 @@ var WikitudePlugin = {
         console.log("app report: " + id);
     }
 };
+

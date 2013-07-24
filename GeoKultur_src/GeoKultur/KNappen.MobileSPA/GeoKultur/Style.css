@@ -11,7 +11,7 @@
     /*font-size: 30px;
     margin-top: 40px;*/
 	font-size: 2em;
-	margin-top: 22px;
+	margin-top: 15px;
     font-weight:normal;
 
 }
@@ -23,7 +23,7 @@
 .divMenuButtons img{
     float: left;
     margin-left: 20px;
-    max-height:90px;
+    max-height:70px;
 }
 .topMenuImage {
     height:52px;
