@@ -126,12 +126,16 @@ module App.Controllers {
                 v = v.toUpperCase();
 
                 if (v == "IMAGE")
-                    _this.showImage(poi.thumbnail());
+                    _this.showImage();
                 if (v == "VIDEO" && poi.videoUri())
                     _this.showVideo(poi.videoUri()[0]);
                 if (v == "SOUND" && poi.soundUri())
                     _this.showAudio(poi.name()[0], poi.soundUri()[0]);
             });
+
+            if (poi.thumbnail()) {
+                this.showImage();
+            }
 
             //var detailAccordion = $("#detailAccordion");
             //detailAccordion.accordion({ active: false, collapsible: false });
@@ -234,8 +238,7 @@ module App.Controllers {
 
         }
 
-        private showImage(path: string) {
-            $("#poiThumbnail").attr("src", path).show();
+        private showImage() {
             $("#poiImage").show();
         }
 
