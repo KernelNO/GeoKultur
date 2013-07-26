@@ -1,5 +1,4 @@
-/// <reference path="Providers/PhoneGapProvider.ts" />
- 
+/// <reference path="Utils/CompatibilityInfo.ts" />
 /**
     System root
     @namespace
@@ -83,7 +82,7 @@ module System {
         }
 
         public fixLocalFileRef(file: string): string {
-            if (navigator.userAgent.match(/(Android)/)) {
+            if (compatibilityInfo.hasAR && compatibilityInfo.isAndroid) {
                 return "file:///android_asset/world/KNappen/" + file;
             } else {
                 return file;

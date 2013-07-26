@@ -4,10 +4,7 @@
     @namespace System.Providers
 */
 module System.Providers {
-    declare var AR: any;
     export class PhoneGapProvider {
-
-        public isPhoneGap: bool = false;
 
         /**
           * PhoneGapProvider
@@ -15,12 +12,6 @@ module System.Providers {
           * @classdesc Provides PhoneGap communication services.
           */
         constructor() {
-            try {
-                if (AR)
-                    this.isPhoneGap = true;
-            } catch (exception) {
-            }
-
         }
 
         /**
@@ -84,7 +75,7 @@ module System.Providers {
         // TODO: Move somewhere else?
         public fixALinksIfPhoneGap(obj: JQuery) {
             var _this = this;
-            if (this.isPhoneGap) {
+            if (compatibilityInfo.isPhoneGap) {
                 this.fixALinks(obj);
             }
             else {
@@ -119,6 +110,16 @@ module System.Providers {
                 d.location = url;
             }
 
+        }
+
+        public callbackSqlReadSuccess() {
+            log.debug("PhoneGapProvider", "PhoneGapInterop reports success on SQL read.")
+            startup.shortcutLoadTimeout();
+        }
+
+        public callbackSqlReadError(errorCode: string, errorMessage: string) {
+            log.debug("PhoneGapProvider", "PhoneGapInterop reports error on SQL read: Code: " + errorCode + ", message: " + errorMessage);
+            startup.shortcutLoadTimeout();
         }
 
     }
