@@ -232,20 +232,32 @@
         }, "Main:DownloadTemplates");
     </script>
 
-    <script>
-
-    </script>
+<script>
+    var adminClicks = 0;
+    startup.addPostInit(function () {
+        $("#toolbarButton").click(function () {
+            adminClicks++;
+            if (adminClicks > 10) {
+                $("#toolbarButtonDebug").show();
+                $("#homeButtonSettings").show();
+            }
+        });
+        viewController.addSelectEvent(function () {
+            adminClicks = 0;
+        });
+    });
+</script>
 
 </head>
 <body>
     <div id="headerSection" class="headerSection">
         <div id="logoFrame" class="middle nobr">
-            <img id="homeLink" class="topMenuImage" src="GeoKultur/Images/Ikoner/Home.png" onmousedown="viewController.selectView('homeView'); return false;" />
+            <img id="toolbarButtonHome" class="topMenuImage" src="GeoKultur/Images/Ikoner/Home.png" onmousedown="viewController.selectView('homeView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Search.png" onmousedown="viewController.selectView('searchView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/AR.png" onmousedown="viewController.selectView('arView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/POI.png" onmousedown="viewController.selectView('mapView'); return false;" />
             <img class="topMenuImage" src="GeoKultur/Images/Ikoner/List.png" onmousedown="viewController.selectView('listView'); return false;" />
-<!--            <img class="topMenuImage" src="GeoKultur/Images/Ikoner/Wrench.png" onmousedown="viewController.selectView('debugView'); return false;" />-->
+            <img id="toolbarButtonDebug" class="topMenuImage hidden" src="GeoKultur/Images/Ikoner/Wrench.png" onmousedown="viewController.selectView('debugView'); return false;" />
             <!--<img class="topMenuImage" src="GeoKultur/Images/Ikoner/About.png" onmousedown="viewController.selectView('aboutView'); return false;" />-->
 
         </div>
@@ -263,28 +275,37 @@
                             <img src="GeoKultur/Images/Ikoner/Search.png" />
                             <h2 class="translate">$T[Search]</h2>
                         </div>
-                    </li><li>
+                    </li>
+                    <li>
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('arView'); return false;">
                             <img src="GeoKultur/Images/Ikoner/AR.png" />
                             <h2 class="translate">$T[Camera]</h2>
                         </div>
-                    </li><li>
+                    </li>
+                    <li>
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('mapView'); return false;">
                             <img class="middle" src="GeoKultur/Images/Ikoner/POI.png" />
                             <h2 class="translate">$T[Map]</h2>
-                        </div></li><li>
+                        </div>
+                    </li>
+                    <li>
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('listView'); return false;">
                             <img src="GeoKultur/Images/Ikoner/List.png" />
                             <h2 class="translate">$T[List]</h2>
-                        </div></li><!--<li>
+                        </div>
+                    </li>
+                    <li id="homeButtonSettings" class="hidden">
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('settingsView'); return false;">
                             <img src="GeoKultur/Images/Ikoner/Settings.png" />
                             <h2 class="translate">$T[Settings]</h2>
-                        </div></li>--><li>
+                        </div>
+                    </li>
+                    <li>
                         <div class="divMenuButtons middle nobr" onmousedown="viewController.selectView('aboutView'); return false;">
                             <img src="GeoKultur/Images/Ikoner/About.png" />
                             <h2 class="translate">$T[About]</h2>
-                        </div></li>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
