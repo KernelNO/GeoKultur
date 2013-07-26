@@ -101,6 +101,12 @@ module App.Providers {
             translater.addTranslation("Buffering...", "Mellomlagrer...");
             translater.addTranslation("Name of new route", "Navn p&aring; ny rute");
             translater.addTranslation("AboutTheData", "Om dataen");
+            translater.addTranslation("Disable caching", "Sl&aring; av mellomlagring");
+            translater.addTranslation("Clear cache", "T&oslash;m mellomlagring");
+            translater.addTranslation("Cache", "Mellomlagring");
+            translater.addTranslation("Cache cleared", "Mellomlagring t&oslash;mt");
+            translater.addTranslation("Save", "Lagre");
+
         }
     }
 }

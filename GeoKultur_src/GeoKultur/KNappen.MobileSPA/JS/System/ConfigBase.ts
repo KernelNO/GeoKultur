@@ -1,3 +1,4 @@
+/// <reference path="Diagnostics/Log.ts" />
 /// <reference path="Utils/CompatibilityInfo.ts" />
 /**
     System root
@@ -10,10 +11,11 @@ module System {
       */
     export class ConfigBase {
         /**
-          Enable debugging mode.
-          @type bool
+          Log level
+          @type System.Diagnostics.LogTypeEnum.Debug
           */
-        public debug: bool = true;
+        public logLevel = System.Diagnostics.LogTypeEnum.VerboseDebug;
+        
         /** 
           Short name of application
           @type string 
@@ -58,6 +60,7 @@ module System {
          */
         constructor() {            
             //this.TemplateProviderFolder = this.fixLocalFileRef(this.TemplateProviderFolder);
+            log.setLogLevel(this.logLevel);
 
             //this.openLayersMapUrl["std0"] = "http://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&";
             this.openLayersMapUrl["std0"] = "http://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&";
