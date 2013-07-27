@@ -19,13 +19,14 @@ module System.Utils {
           * @param eventCallback Callback function with empty signature.
           * @param {string} [moduleName] Optional name of module (for error logging if exception).
           */
-        public addHandler(eventCallback: { (): void; }, moduleName?: string) {
-            this.eventHooks.on(this.name, function () {
+        public addHandler(eventCallback: any, moduleName?: string) {
+            this.eventHooks.on(this.name, function (event: any, ...args: any[]) {
                 try {
-                    eventCallback();
+                    // TODO: .apply instead?
+                    eventCallback(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9]);
                 } catch (error) {
                     var exception: Error = <Error>error;
-                    log.error("Event", "[" + this.name + "] Exception in event handler: ModuleName: " + (moduleName || "unknown") + ": " + exception);
+                    log.error("Event", "[" + this.name + "] Exception in event handler: " + exception);
                 }
             });
         }
